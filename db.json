@@ -1,0 +1,133 @@
+{
+  "Delhimovieslist": [
+    {
+      "id": 1,
+      "title": "Avatar: The Way of Water",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MzEzLjlLIGxpa2Vz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00037264-bvuyspjwsc-portrait.jpg",
+      "Lang": ["English","Hindi","Tamil","Telegu"],
+      "Rating":"UA"
+    },
+    {
+      "id": 2,
+      "title": "Drishyam 2",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS8xMCAgNjQuNksgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00331997-ptqfdfmgtr-portrait.jpg",
+      "Lang": ["Hindi"],
+      "Rating":"UA"
+    },
+    {
+      "id": 3,
+      "title": "Bhediya",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC4xLzEwICAxNy40SyB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00312739-twjrkftutt-portrait.jpg",
+      "Lang": ["Hindi"],
+      "Rating":"UA"
+    },
+    {
+      "id": 4,
+      "title": "Black Panther: Wakanda Forever",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC43LzEwICA1MUsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00310792-blpzhjqpnu-portrait.jpg",
+      "Lang": ["Hindi","English","Telegu","Tamil"],
+      "Rating":"UA"
+    },
+    {
+      "id": 6,
+      "title": "Uunchai",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC40LzEwICAxNC42SyB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00335262-yduagmklxs-portrait.jpg",
+      "Lang": ["Hindi"],
+      "Rating":"U"
+    },
+    {
+      "id": 7,
+      "title": "Strange World",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ny8xMCAgMTc5IHZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00345205-segnlwxxnw-portrait.jpg",
+      "Lang": ["Hindi","English"],
+      "Rating":"U"
+    },
+    {
+      "id": 8,
+      "title": "Kantara",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS4yLzEwICA5Ny4ySyB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00342025-shnasdmajr-portrait.jpg",
+      "Lang": ["Hindi"],
+      "Rating":"UA"
+    },
+    {
+      "id": 9,
+      "title": "Dada Lakhmi",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS42LzEwICA4MjMgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00344105-naqtruuyem-portrait.jpg",
+      "Lang": ["Haryanvi"],
+      "Rating":"U"
+    },
+    {
+      "id": 10,
+      "title": "Shefeekkinte Santhosham",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS42LzEwICAxSyB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00340920-kmcjkxfplk-portrait.jpg",
+      "Lang": ["Malayalam"],
+      "Rating":"U"
+    }
+
+  ],
+  "Bengalurumovies": [
+    {
+      "id": 1,
+      "title": "Avatar: The Way of Water",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MzEzLjlLIGxpa2Vz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00037264-bvuyspjwsc-portrait.jpg",
+      "Lang": ["English","Hindi","Tamil","Telegu"],
+      "Rating":"UA"
+    },
+    {
+      "id": 2,
+      "title": "Drishyam 2",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS8xMCAgNjQuNksgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00331997-ptqfdfmgtr-portrait.jpg",
+      "Lang": ["Hindi"],
+      "Rating":"UA"
+    },
+    {
+      "id": 3,
+      "title": "Bhediya",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC4xLzEwICAxNy40SyB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00312739-twjrkftutt-portrait.jpg",
+      "Lang": ["Hindi"],
+      "Rating":"UA"
+    },
+    {
+      "id": 4,
+      "title": "Black Panther: Wakanda Forever",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC43LzEwICA1MUsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00310792-blpzhjqpnu-portrait.jpg",
+      "Lang": ["Hindi","English","Telegu","Tamil"],
+      "Rating":"UA"
+    },
+    {
+      "id": 6,
+      "title": "Uunchai",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC40LzEwICAxNC42SyB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00335262-yduagmklxs-portrait.jpg",
+      "Lang": ["Hindi"],
+      "Rating":"U"
+    },
+    {
+      "id": 7,
+      "title": "Strange World",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ny8xMCAgMTc5IHZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00345205-segnlwxxnw-portrait.jpg",
+      "Lang": ["Hindi","English"],
+      "Rating":"U"
+    },
+    {
+      "id": 8,
+      "title": "Kantara",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS4yLzEwICA5Ny4ySyB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00342025-shnasdmajr-portrait.jpg",
+      "Lang": ["Kannada"],
+      "Rating":"UA"
+    },
+    {
+      "id": 9,
+      "title": "Triple Riding",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC42LzEwICAzNTkgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00328345-rajtfleeha-portrait.jpg",
+      "Lang": ["Kannada"],
+      "Rating":"UA"
+    },
+    {
+      "id": 10,
+      "title": "Raymo",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS42LzEwICAzNzYgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00117855-bgmtcmhbxn-portrait.jpg",
+      "Lang": ["Kannada"],
+      "Rating":"UA"
+    }
+  ]
+}
