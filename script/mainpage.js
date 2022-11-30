@@ -1,5 +1,31 @@
 import movieslist from "../db.json" assert{type:'json'};
-import { Delhimovies,Bengalurumovies,displaymovielist,filterformdata,filterlangdata,filtergenredata } from "../utils/utils.js";
+import {Delhimovies,Bengalurumovies,displaymovielist,filterformdata,filterlangdata,filtergenredata } from "../utils/utils.js";
+let displayslider=()=>
+{
+    let sliderdata=["https://assets-in.bmscdn.com/promotions/cms/creatives/1664611710097_moviepageweb.jpg",
+    "https://assets-in.bmscdn.com/promotions/cms/creatives/1669284980178_bannerweb.jpg",
+    "https://assets-in.bmscdn.com/promotions/cms/creatives/1668757696353_justice.jpg",
+    "https://assets-in.bmscdn.com/promotions/cms/creatives/1667240850074_genericweb.jpg"]
+    let image=document.createElement("img")
+    image.src=sliderdata[0]
+    document.querySelector("#slider").append(image)
+    let index=1
+    setInterval(()=>
+    {
+        document.querySelector("#slider").innerHTML=""
+        let image=document.createElement("img")
+        image.src=sliderdata[index]
+        document.querySelector("#slider").append(image)
+        console.log(index)
+        index++
+        if(index==sliderdata.length)
+        {
+            index=0;
+        }
+    },5000);
+}
+displayslider()
+
 //let city=localStorage.getItem("selectcity")
 let city="Delhi"
 if(city=="Delhi")
@@ -9,6 +35,13 @@ if(city=="Delhi")
     movieslist.Delhimovieslist.forEach((ele)=>
     {
         displaymovielist(ele)
+    })
+    document.querySelector(".clear").addEventListener("click",()=>
+    {
+        movieslist.Delhimovieslist.forEach((ele)=>
+        {
+            displaymovielist(ele)
+        })
     })
     document.querySelector(".filters").addEventListener("input",()=>
     {
@@ -29,6 +62,8 @@ if(city=="Delhi")
             displaymovielist(ele)
         })
     })
+
+    
 }
 else if(city=="Bengaluru")
 {
@@ -36,6 +71,13 @@ else if(city=="Bengaluru")
     movieslist.Bengalurumovieslist.forEach((ele)=>
     {
         displaymovielist(ele)
+    })
+    document.querySelector(".clear").addEventListener("click",()=>
+    {
+        movieslist.Bengalurumovieslist.forEach((ele)=>
+        {
+            displaymovielist(ele)
+        })
     })
     document.querySelector(".filter").addEventListener("input",()=>
     {

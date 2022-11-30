@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*
+{
+    font-family:'PT Sans', sans-serif;
+    letter-spacing: 2px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f5f5f5;
+}
+#iframe
+{
+    margin-top: 40px;
+    width: 540px;
+    height: 315px;
+}
+#trailer
+{
+    width: 40%;
+    margin: auto;
+    color: #efa2ac;
+}
+#trailer h1
+{
+    position: fixed;
+    text-align: center;
+}

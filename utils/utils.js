@@ -1,26 +1,10 @@
 let Delhimovies=()=>
 {
- return `<h1>Movies in Delhi</h1>
- <div>
-     <button>English</button>
-     <button>Hindi</button>
-     <button>English 7D</button>
-     <button>Malayalam</button>
-     <button>Haryanvi</button>
-     <button>Punjabi</button>
- </div>`
+ return `<h1>Movies in Delhi</h1>`
 }
 let Bengalurumovies=()=>
 {
- return `<h1>Movies in Delhi</h1>
- <div>
-     <button>English</button>
-     <button>Hindi</button>
-     <button>English 7D</button>
-     <button>Kannada</button>
-     <button>Odia</button>
-     <button>Tulu</button>
- </div>`
+ return `<h1>Movies in Delhi</h1>`
 }
 
 let displaymovielist=(ele)=>
@@ -29,6 +13,11 @@ let displaymovielist=(ele)=>
     let img=document.createElement("img")
     img.src=ele.img
     img.style.width="100%"
+    img.addEventListener("click",()=>
+    {
+        localStorage.setItem("moviedesc",ele.title)
+        window.location.href="../html/desc.html"
+    })
     let title=document.createElement("h3")
     title.innerText=ele.title
     let rating=document.createElement("p")
@@ -55,7 +44,7 @@ let filtergenredata=(data)=>
     let langinput=document.querySelector("#gen").value;
     let arr=data.filter((ele)=>
     {
-        return ele.Lang.includes(langinput)
+        return ele.Genre.includes(langinput)
     })
     return arr;
 }
@@ -64,8 +53,9 @@ let filterformdata=(data)=>
     let langinput=document.querySelector("#form").value;
     let arr=data.filter((ele)=>
     {
-        return ele.Lang.includes(langinput)
+        return ele.Form.includes(langinput)
     })
     return arr;
 }
+
 export {Delhimovies,Bengalurumovies,displaymovielist,filterformdata,filterlangdata,filtergenredata}
