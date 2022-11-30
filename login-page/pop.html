@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>signin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles/pop.css">
+
+</head>
+
+<body>
+
+
+
+
+    <button id="myBtn">Sign In</button>
+    <span id="myBtn2"></span>
+
+
+    <div id="myModal" class="modal">
+
+        <!--  content -->
+        <div class="modal-content">
+
+
+
+
+            <span class="close">&times;</span>
+            <h3>Get Started</h3>
+
+
+
+            <div class="google">
+                <img src="https://in.bmscdn.com/webin/common/icons/googlelogo.svg" alt="">
+                <p> Continue with Google</p>
+            </div>
+
+            <div class="email">
+                <img src="https://in.bmscdn.com/webin/common/icons/email.svg" alt="">
+                <p> Continue with Email</p>
+            </div>
+            <div class="apple">
+                <i class="fa-brands fa-apple"></i>
+                <p>Continue with Apple</p>
+            </div>
+
+            <p>OR</p>
+
+            <div id="bton">
+                <a href="otp.html"><button>Create Account</button></a>
+            </div>
+            <br>
+
+
+
+
+        </div>
+
+    </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+
+        var btn = document.getElementById("myBtn");
+
+        var span = document.getElementsByClassName("close")[0];
+
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Get OTP
+
+        let OtpGenerator = document.getElementById("nos")
+        OtpGenerator.addEventListener('click', getOtp)
+
+        function getOtp(e) {
+            let numbers = document.getElementById("number").value;
+            localStorage.setItem("Phone Number", numbers);
+            console.log(numbers);
+            window.location.href = "otp.html"
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
+
+
+<script>
+
+    var navData = JSON.parse(localStorage.getItem("loginData"));
+
+    navData.map(function (elem) {
+        let result = document.querySelector("#myBtn");
+        result.innerText = elem.name;
+        result.style.color = "black"
+        result.style.background = "none"
+        result.style.weight = "bold"
+        console.log(elem.name);
+        let button = document.createElement("button");
+        button.innerText = "Log Out"
+        document.getElementById("myBtn2").append(button);
+        button.setAttribute("id", "myDelete");
+
+    });
+
+
+
+    document.getElementById("myDelete").addEventListener('click', deleteItems)
+
+    function deleteItems() {
+        localStorage.clear();
+        location.reload();
+    }
+
+
+</script>

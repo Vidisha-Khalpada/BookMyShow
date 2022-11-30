@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In page</title>
+
+    <link rel="stylesheet" href="/styles/otp.css">
+
+</head>
+
+<body>
+
+
+
+    <div class="deco">
+
+
+        <h3>Get Sign In & enjoy Your Movie</h3>
+        <form>
+            <h2>Sign In</h2>
+
+            <!-- // username -->
+            <div class="txt_field">
+                <input type="text" placeholder="Your Name" required id="name">
+                <span></span>
+            </div>
+
+            <!--  phone number -->
+
+            <div class="txt_field">
+                <input type="number" placeholder="Your Phone Number" required id="number">
+                <span></span>
+            </div>
+
+            <!-- email -->
+
+            <div class="txt_field">
+                <input type="email" placeholder="Your Email" required id="email">
+                <span></span>
+            </div>
+
+            <!-- Password -->
+            <div class="txt_field">
+                <input type="password" placeholder="Password" required id="password">
+                <span></span>
+            </div>
+
+            <div class="signLink">
+
+
+                <p>Already have an account <a href="login.html">Sign in</a></p>
+            </div>
+            <div class="typsub">
+
+                <input type="submit" value="Proceed">
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
+<script>
+    document.querySelector('form').addEventListener('submit', formPage);
+
+
+    let data = JSON.parse(localStorage.getItem('inputData')) || [];
+    function formPage(e) {
+        e.preventDefault();
+        let obj = {};
+
+        let name = document.querySelector('#name').value;
+        let number = document.querySelector('#number').value;
+        let email = document.querySelector('#email').value;
+        let password = document.querySelector('#password').value;
+
+
+        obj.name = name;
+        obj.number = number;
+        obj.email = email;
+        obj.password = password;
+
+
+        data.push(obj);
+
+        localStorage.setItem('inputData', JSON.stringify(data))
+        alert("Signing up Sucessfully")
+        // console.log(data);
+        window.location = 'login.html';
+
+    }
+</script>
