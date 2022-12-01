@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#ad-slider {
+  width: 100%;
+  /* height: 30vh; */
+  overflow: hidden;
+}
+.slides {
+  width: 250%;
+  /* height: 30vh; */
+  display: flex;
+}
+.slides input {
+  display: none;
+}
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+.slide img {
+  width: 100%;
+  /* height: 100%; */
+}
+
+.manual {
+  position: absolute;
+  width: 100%;
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+}
+.manual-btm {
+  border: 2px solid #fafafa9c;
+  padding: 3px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manual-btm:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1,
+#radio2,
+#radio3 {
+  margin-right: 10px;
+}
+
+.manual-btm:hover {
+  background-color: #ffffff;
+}
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -10%;
+}
+#radio3:checked ~ .first {
+  margin-left: -30%;
+}
+
+/* .auto {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 270px;
+}
+.auto div {
+  border: 2px solid #40d3dc;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.auto div:not(:last-child) {
+  margin-right: 40px;
+} */
+#radio1:checked ~ .auto .auto-btn1 {
+  background: #40d3dc;
+}
+#radio2:checked ~ .auto .auto-btn2 {
+  background: #40d3dc;
+}
+#radio3:checked ~ .auto .auto-btn3 {
+  background: #40d3dc;
+}
+
+#header {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+/* movies page */
+#main-box {
+  margin: auto;
+  width: 70%;
+}
+#movies-preview {
+  margin: auto;
+  overflow: hidden;
+}
+
+#movie-item {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+#movie-item img {
+  height: 400px;
+}
+
+#movie-btm {
+  position: absolute;
+  top: 250px;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+#movie-btm span {
+  z-index: 100;
+  background: #bdbdbd;
+  top: 250px;
+  color: green;
+  position: relative;
+  border-radius: 56%;
+  padding: 20px;
+}
+
+/* ads */
+
+#ads img {
+  width: 100%;
+  object-fit: cover;
+  margin: 30px 0;
+}

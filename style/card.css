@@ -1,0 +1,205 @@
+/* PRODUCTS */
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+  width: 70%;
+  margin: auto;
+}
+
+.product-category {
+  /* padding: 0 10vw; */
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+.product-container {
+  /* padding: 0 10vw; */
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 250px;
+  margin-right: 40px;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+#product-btm {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 35px;
+  height: 24px;
+  position: relative;
+  top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 8;
+  padding: 25px;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+/*preminum*/
+#premium {
+  display: block;
+  height: 400px;
+  width: 100%;
+  background-color: #2b3148;
+  padding: 50px 0;
+}
+#premium-box,
+#podcast-box {
+  width: 70%;
+  position: relative;
+  margin: auto;
+}
+#premium-img > img {
+  height: 65px;
+}
+#premium-header {
+  margin: 20px 0;
+}
+#premium-subheader {
+  font-size: 15px;
+  font-weight: 100;
+  color: #fff;
+  text-transform: capitalize;
+}
+#premium-mainheader {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+/* podcast */
+#podcast,
+#podcast1 {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+#podcast-box {
+  margin: 50px auto;
+}
+
+#podcast::-webkit-scrollbar,
+#podcast1::-webkit-scrollbar {
+  display: none;
+}
+#podcast-mainheader {
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  margin: 20px 0;
+  text-transform: capitalize;
+}
+.podcast-img {
+  width: 250px;
+  border-radius: 10px;
+  height: 350px;
+}
+#podcast-btm {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+}
+.podcastpre-btn1,
+.podcastnxt-btn1,
+.podcastpre-btn,
+.podcastnxt-btn {
+  border: none;
+  width: 35px;
+  height: 24px;
+  position: relative;
+  top: 11rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 8;
+  padding: 25px;
+}
+
+.podcastpre-btn1,
+.podcastpre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.podcastnxt-btn1,
+.podcastnxt-btn {
+  right: 0;
+}
+
+#podcast-header span:last-child {
+  color: #fff;
+  font-size: 18px;
+  padding: 5px;
+  background-color: rgb(222 51 75);
+}
+#podcast-header {
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  margin: 20px 0;
+  text-transform: capitalize;
+}
