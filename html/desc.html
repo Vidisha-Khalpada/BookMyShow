@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Description</title>
     <link rel="stylesheet" href="../css/desc.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
+    <div id="sharedialog"></div>
     <div id="poster"></div>
     <div id="about"></div>
     <div id="offers">
@@ -27,10 +32,22 @@
         <div id="Crew"></div>
     </div>
     <div id="Likeparent">
-        <h1>You might also like</h1>
-        <div id="Like"></div>
+        <div id="Likechild">
+            <h1>You might also like</h1>
+            <h2 id="viewall">View All ></h2>
+        </div>
+        
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
     </div>
 </body>
 </html>
 <script src="https://kit.fontawesome.com/646ce80a81.js" crossorigin="anonymous"></script>
 <script type="module" src="../script/desc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

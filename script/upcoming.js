@@ -1,5 +1,5 @@
 import movieslist from "../db.json" assert{type:'json'};
-import {Delhimovies,Bengalurumovies,displaymovielist,filterformdata,filterlangdata,filtergenredata } from "../utils/utils.js";
+import {Delhimovies,displaymovielist,filterformdata,filterlangdata,filtergenredata } from "../utils/utils.js";
 let displayslider=()=>
 {
     let swiper = new Swiper(".mySwiper", {
@@ -23,27 +23,27 @@ if(city=="Delhi")
 {
     document.querySelector("#moviefilter").innerHTML=Delhimovies();
     document.querySelector("#movielist").innerHTML=""
-    movieslist.Delhimovieslist.forEach((ele)=>
+    movieslist.upcomingmovies.forEach((ele)=>
     {
         displaymovielist(ele)
     })
     document.querySelector("#clearlang").addEventListener("click",()=>
     {
-        movieslist.Delhimovieslist.forEach((ele)=>
+        movieslist.upcomingmovies.forEach((ele)=>
         {
             displaymovielist(ele)
         })
     })
     document.querySelector("#clearform").addEventListener("click",()=>
     {
-        movieslist.Delhimovieslist.forEach((ele)=>
+        movieslist.upcomingmovies.forEach((ele)=>
         {
             displaymovielist(ele)
         })
     })
     document.querySelector("#cleargen").addEventListener("click",()=>
     {
-        movieslist.Delhimovieslist.forEach((ele)=>
+        movieslist.upcomingmovies.forEach((ele)=>
         {
             displaymovielist(ele)
         })
@@ -51,203 +51,90 @@ if(city=="Delhi")
     document.querySelector("#En").addEventListener("click",()=>
     {
         let id="#En"
-        filterlangdata(movieslist.Delhimovieslist,id)
+        filterlangdata(movieslist.upcomingmovies,id)
     })
     document.querySelector("#Hi").addEventListener("click",()=>
     {
         let id="#Hi"
-        filterlangdata(movieslist.Delhimovieslist,id)
+        filterlangdata(movieslist.upcomingmovies,id)
     })
     document.querySelector("#Ta").addEventListener("click",()=>
     {
         let id="#Ta"
-        filterlangdata(movieslist.Delhimovieslist,id)
+        filterlangdata(movieslist.upcomingmovies,id)
     })
     document.querySelector("#Ha").addEventListener("click",()=>
     {
         let id="#Ha"
-        filterlangdata(movieslist.Delhimovieslist,id)
+        filterlangdata(movieslist.upcomingmovies,id)
     })
     document.querySelector("#Te").addEventListener("click",()=>
     {
         let id="#Te"
-        filterlangdata(movieslist.Delhimovieslist,id)
+        filterlangdata(movieslist.upcomingmovies,id)
     })
     document.querySelector("#Ka").addEventListener("click",()=>
     {
         let id="#Ka"
-        filterlangdata(movieslist.Delhimovieslist,id)
+        filterlangdata(movieslist.upcomingmovies,id)
     })
     document.querySelector("#Dr").addEventListener("click",()=>
     {
         let id="#Dr"
-        filtergenredata(movieslist.Delhimovieslist,id)
+        filtergenredata(movieslist.upcomingmovies,id)
     })
     document.querySelector("#Th").addEventListener("click",()=>
     {
         let id="#Th"
-        filtergenredata(movieslist.Delhimovieslist,id)
+        filtergenredata(movieslist.upcomingmovies,id)
     })
     document.querySelector("#Ad").addEventListener("click",()=>
     {
         let id="#Ad"
-        filtergenredata(movieslist.Delhimovieslist,id)
+        filtergenredata(movieslist.upcomingmovies,id)
     })
     document.querySelector("#Ro").addEventListener("click",()=>
     {
         let id="#Ro"
-        filtergenredata(movieslist.Delhimovieslist,id)
+        filtergenredata(movieslist.upcomingmovies,id)
     })
     document.querySelector("#Co").addEventListener("click",()=>
     {
         let id="#Co"
-        filtergenredata(movieslist.Delhimovieslist,id)
+        filtergenredata(movieslist.upcomingmovies,id)
     })
     document.querySelector("#An").addEventListener("click",()=>
     {
         let id="#An"
-        filtergenredata(movieslist.Delhimovieslist,id)
+        filtergenredata(movieslist.upcomingmovies,id)
     })
     document.querySelector("#D2").addEventListener("click",()=>
     {
         let id="#D2"
-        filterformdata(movieslist.Delhimovieslist,id)
+        filterformdata(movieslist.upcomingmovies,id)
     })
     document.querySelector("#D3").addEventListener("click",()=>
     {
         let id="#D3"
-        filterformdata(movieslist.Delhimovieslist,id)
+        filterformdata(movieslist.upcomingmovies,id)
     })
     document.querySelector("#X43D").addEventListener("click",()=>
     {
         let id="#X43D"
-        filterformdata(movieslist.Delhimovieslist,id)
+        filterformdata(movieslist.upcomingmovies,id)
     })
     document.querySelector("#D7").addEventListener("click",()=>
     {
         let id="#D7"
-        filterformdata(movieslist.Delhimovieslist,id)
+        filterformdata(movieslist.upcomingmovies,id)
     })
     document.querySelector("#IMAX3D").addEventListener("click",()=>
     {
         let id="#IMAX3D"
-        filterformdata(movieslist.Delhimovieslist,id)
+        filterformdata(movieslist.upcomingmovies,id)
     })
 }
-else if(city=="Bengaluru")
-{
-    document.querySelector("#moviefilter").innerHTML=Bengalurumovies();
-    movieslist.Bengalurumovieslist.forEach((ele)=>
-    {
-        displaymovielist(ele)
-    })
-    document.querySelector("#clearlang").addEventListener("click",()=>
-    {
-        movieslist.Bengalurumovieslist.forEach((ele)=>
-        {
-            displaymovielist(ele)
-        })
-    })
-    document.querySelector("#clearform").addEventListener("click",()=>
-    {
-        movieslist.Bengalurumovieslist.forEach((ele)=>
-        {
-            displaymovielist(ele)
-        })
-    })
-    document.querySelector("#cleargen").addEventListener("click",()=>
-    {
-        movieslist.Bengalurumovieslist.forEach((ele)=>
-        {
-            displaymovielist(ele)
-        })
-    })
-    document.querySelector("#En").addEventListener("click",()=>
-    {
-        let id="#En"
-        filterlangdata(movieslist.Bengalurumovieslist,id)
-    })
-    document.querySelector("#Hi").addEventListener("click",()=>
-    {
-        let id="#Hi"
-        filterlangdata(movieslist.Bengalurumovieslist,id)
-    })
-    document.querySelector("#Ta").addEventListener("click",()=>
-    {
-        let id="#Ta"
-        filterlangdata(movieslist.Bengalurumovieslist,id)
-    })
-    document.querySelector("#Ha").addEventListener("click",()=>
-    {
-        let id="#Ha"
-        filterlangdata(movieslist.Bengalurumovieslist,id)
-    })
-    document.querySelector("#Te").addEventListener("click",()=>
-    {
-        let id="#Te"
-        filterlangdata(movieslist.Bengalurumovieslist,id)
-    })
-    document.querySelector("#Ka").addEventListener("click",()=>
-    {
-        let id="#Ka"
-        filterlangdata(movieslist.Bengalurumovieslist,id)
-    })
-    document.querySelector("#Dr").addEventListener("click",()=>
-    {
-        let id="#Dr"
-        filtergenredata(movieslist.Bengalurumovieslist,id)
-    })
-    document.querySelector("#Th").addEventListener("click",()=>
-    {
-        let id="#Th"
-        filtergenredata(movieslist.Bengalurumovieslist,id)
-    })
-    document.querySelector("#Ad").addEventListener("click",()=>
-    {
-        let id="#Ad"
-        filtergenredata(movieslist.Bengalurumovieslist,id)
-    })
-    document.querySelector("#Ro").addEventListener("click",()=>
-    {
-        let id="#Ro"
-        filtergenredata(movieslist.Bengalurumovieslist,id)
-    })
-    document.querySelector("#Co").addEventListener("click",()=>
-    {
-        let id="#Co"
-        filtergenredata(movieslist.Bengalurumovieslist,id)
-    })
-    document.querySelector("#An").addEventListener("click",()=>
-    {
-        let id="#An"
-        filtergenredata(movieslist.Bengalurumovieslist,id)
-    })
-    document.querySelector("#D2").addEventListener("click",()=>
-    {
-        let id="#D2"
-        filterformdata(movieslist.Bengalurumovieslist,id)
-    })
-    document.querySelector("#D3").addEventListener("click",()=>
-    {
-        let id="#D3"
-        filterformdata(movieslist.Bengalurumovieslist,id)
-    })
-    document.querySelector("#X43D").addEventListener("click",()=>
-    {
-        let id="#X43D"
-        filterformdata(movieslist.Bengalurumovieslist,id)
-    })
-    document.querySelector("#D7").addEventListener("click",()=>
-    {
-        let id="#D7"
-        filterformdata(movieslist.Bengalurumovieslist,id)
-    })
-    document.querySelector("#IMAX3D").addEventListener("click",()=>
-    {
-        let id="#IMAX3D"
-        filterformdata(movieslist.Bengalurumovieslist,id)
-    })
-}
+
 document.querySelector("#langdrop").addEventListener("click",()=>
 {
     if(document.getElementById("lang").style.display=="block")
@@ -289,7 +176,7 @@ document.querySelector("#formdrop").addEventListener("click",()=>
 })
 document.querySelector("#upcoming").addEventListener("click",()=>
 {
-    window.location.href="../html/upcoming.html"
+    window.location.href="../html/mainpage.html"
 })
 document.querySelector("#filtericon").addEventListener("click",()=>
 {

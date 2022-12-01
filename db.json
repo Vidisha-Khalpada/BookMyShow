@@ -5,129 +5,249 @@
       "title": "Avatar: The Way of Water",
       "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MzEzLjlLIGxpa2Vz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00037264-bvuyspjwsc-portrait.jpg",
       "Lang": ["English","Hindi","Tamil","Telegu"],
-      "Rating":"UA"
+      "Rating":"UA",
+      "Genre":["Action","Adventure","Fantasy"],
+      "Form":["2D","3D","4DX 3D","IMAX 3D","3D SCREEN X"]
     },
     {
       "id": 2,
       "title": "Drishyam 2",
       "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS8xMCAgNjQuNksgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00331997-ptqfdfmgtr-portrait.jpg",
       "Lang": ["Hindi"],
-      "Rating":"UA"
+      "Rating":"UA",
+      "Genre":["Drama","Mystery","Thriller"],
+      "Form":["2D"]
     },
     {
       "id": 3,
       "title": "Bhediya",
       "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC4xLzEwICAxNy40SyB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00312739-twjrkftutt-portrait.jpg",
       "Lang": ["Hindi"],
-      "Rating":"UA"
+      "Rating":"UA",
+      "Genre":["Comedy","Thriller"],
+      "Form":["2D","3D"]      
     },
     {
       "id": 4,
       "title": "Black Panther: Wakanda Forever",
       "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC43LzEwICA1MUsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00310792-blpzhjqpnu-portrait.jpg",
       "Lang": ["Hindi","English","Telegu","Tamil"],
-      "Rating":"UA"
+      "Rating":"UA",
+      "Genre":["Action","Adventure","Drama"],
+      "Form":["2D","3D","4DX 3D","IMAX 3D","3D SCREEN X"]
     },
     {
       "id": 6,
       "title": "Uunchai",
       "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC40LzEwICAxNC42SyB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00335262-yduagmklxs-portrait.jpg",
       "Lang": ["Hindi"],
-      "Rating":"U"
+      "Rating":"U",
+      "Genre":["Drama","Adventure","Family"],
+      "Form":["2D"]
     },
     {
       "id": 7,
       "title": "Strange World",
       "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ny8xMCAgMTc5IHZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00345205-segnlwxxnw-portrait.jpg",
       "Lang": ["Hindi","English"],
-      "Rating":"U"
+      "Rating":"U",
+      "Genre":["Anime"],
+      "Form":["2D","3D","4DX 3D"]
     },
     {
       "id": 8,
       "title": "Kantara",
       "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS4yLzEwICA5Ny4ySyB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00342025-shnasdmajr-portrait.jpg",
       "Lang": ["Hindi"],
-      "Rating":"UA"
+      "Rating":"UA",
+      "Genre":["Drama","Adventure","Thriller"],
+      "Form":["2D"]
     },
     {
       "id": 9,
       "title": "Dada Lakhmi",
       "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS42LzEwICA4MjMgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00344105-naqtruuyem-portrait.jpg",
       "Lang": ["Haryanvi"],
-      "Rating":"U"
+      "Rating":"U",
+      "Genre":["Drama","Biography","Musical"],
+      "Form":["2D"]
     },
     {
       "id": 10,
       "title": "Shefeekkinte Santhosham",
       "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS42LzEwICAxSyB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00340920-kmcjkxfplk-portrait.jpg",
       "Lang": ["Malayalam"],
-      "Rating":"U"
+      "Rating":"U",
+      "Genre":["Drama","Family"],
+      "Form":["2D"]
+      
     }
 
   ],
-  "Bengalurumovies": [
+  "Bengalurumovieslist": [
     {
       "id": 1,
       "title": "Avatar: The Way of Water",
       "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MzEzLjlLIGxpa2Vz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00037264-bvuyspjwsc-portrait.jpg",
       "Lang": ["English","Hindi","Tamil","Telegu"],
-      "Rating":"UA"
+      "Rating":"UA",
+      "Genre":["Action","Adventure","Fantasy"],
+      "Form":["2D","3D","4DX 3D","IMAX 3D","3D SCREEN X"]
     },
     {
       "id": 2,
       "title": "Drishyam 2",
       "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS8xMCAgNjQuNksgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00331997-ptqfdfmgtr-portrait.jpg",
       "Lang": ["Hindi"],
-      "Rating":"UA"
+      "Rating":"UA",
+      "Genre":["Drama","Mystery","Thriller"],
+      "Form":["2D"]
     },
     {
       "id": 3,
       "title": "Bhediya",
       "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC4xLzEwICAxNy40SyB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00312739-twjrkftutt-portrait.jpg",
       "Lang": ["Hindi"],
-      "Rating":"UA"
+      "Rating":"UA",
+      "Genre":["Comedy","Thriller"],
+      "Form":["2D","3D"]      
     },
     {
       "id": 4,
       "title": "Black Panther: Wakanda Forever",
       "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC43LzEwICA1MUsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00310792-blpzhjqpnu-portrait.jpg",
       "Lang": ["Hindi","English","Telegu","Tamil"],
-      "Rating":"UA"
+      "Rating":"UA",
+      "Genre":["Action","Adventure","Drama"],
+      "Form":["2D","3D","4DX 3D","IMAX 3D","3D SCREEN X"]
     },
     {
       "id": 6,
       "title": "Uunchai",
       "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC40LzEwICAxNC42SyB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00335262-yduagmklxs-portrait.jpg",
       "Lang": ["Hindi"],
-      "Rating":"U"
+      "Rating":"U",
+      "Genre":["Drama","Adventure","Family"],
+      "Form":["2D"]
     },
     {
       "id": 7,
       "title": "Strange World",
       "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ny8xMCAgMTc5IHZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00345205-segnlwxxnw-portrait.jpg",
       "Lang": ["Hindi","English"],
-      "Rating":"U"
+      "Rating":"U",
+      "Genre":["Anime"],
+      "Form":["2D","3D","4DX 3D"]
     },
     {
       "id": 8,
       "title": "Kantara",
       "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS4yLzEwICA5Ny4ySyB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00342025-shnasdmajr-portrait.jpg",
       "Lang": ["Kannada"],
-      "Rating":"UA"
+      "Rating":"UA",
+      "Genre":["Drama","Adventure","Thriller"],
+      "Form":["2D"]
     },
     {
       "id": 9,
       "title": "Triple Riding",
       "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC42LzEwICAzNTkgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00328345-rajtfleeha-portrait.jpg",
       "Lang": ["Kannada"],
-      "Rating":"UA"
+      "Rating":"UA",
+      "Genre":["Romantic","Thriller"],
+      "Form":["2D"]
     },
     {
       "id": 10,
       "title": "Raymo",
       "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS42LzEwICAzNzYgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00117855-bgmtcmhbxn-portrait.jpg",
       "Lang": ["Kannada"],
-      "Rating":"UA"
+      "Rating":"UA",
+      "Genre":["Drama","Romantic"],
+      "Form":["2D"]
+    }
+  ],
+  "upcomingmovies": [
+    {
+      "id": 1,
+      "title": "Cirkus",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-MjMsIERlYyAyMDIy,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00145851-xejskuubyq-portrait.jpg",
+      "Lang": ["Hindi"],
+      "Rating":"UA",
+      "Genre":["Comedy","Drama"],
+      "Form":["2D"]
+    },
+    {
+      "id": 2,
+      "title": "Life Is Good",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-OSwgRGVjIDIwMjI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00008027-nczxantxff-portrait.jpg",
+      "Lang": ["Hindi"],
+      "Rating":"UA",
+      "Genre":["Drama"],
+      "Form":["2D"]
+    },
+    {
+      "id": 3,
+      "title": "Vijayanand",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-OSwgRGVjIDIwMjI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00324908-dedxmytgnu-portrait.jpg",
+      "Lang": ["Hindi","Kannada","Tamil","Telegu","Malayalam"],
+      "Rating":"UA",
+      "Genre":["Biography"],
+      "Form":["2D"]      
+    },
+    {
+      "id": 4,
+      "title": "Thimayya & Thimayya",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-MiwgRGVjIDIwMjI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00342645-bfmhekpcej-portrait.jpg",
+      "Lang": ["Kannada"],
+      "Rating":"UA",
+      "Genre":["Comedy","Family","Drama"],
+      "Form":["2D"]
+    },
+    {
+      "id": 6,
+      "title": "The Teacher",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-MiwgRGVjIDIwMjI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00345696-nwruarrysw-portrait.jpg",
+      "Lang": ["Malayalam"],
+      "Rating":"UA",
+      "Genre":["Action","Drama"],
+      "Form":["2D"]
+    },
+    {
+      "id": 7,
+      "title": "Nenevaru",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-MiwgRGVjIDIwMjI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00345531-fvwdfjtvep-portrait.jpg",
+      "Lang": ["Telegu"],
+      "Rating":"UA",
+      "Genre":["Action","Romantic","Thriller"],
+      "Form":["2D"]
+    },
+    {
+      "id": 8,
+      "title": "Bhagwaan Bachave",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-MiwgRGVjIDIwMjI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00340265-lqtaxtkvpl-portrait.jpg",
+      "Lang": ["Gujarati"],
+      "Rating":"UA",
+      "Genre":["Drama","Suspense","Thriller"],
+      "Form":["2D"]
+    },
+    {
+      "id": 9,
+      "title": "The Good Maharaja",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-MTcsIERlYyAyMDIy,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00321678-dgskjtshuy-portrait.jpg",
+      "Lang": ["Hindi"],
+      "Rating":"UA",
+      "Genre":["Drama","Historical"],
+      "Form":["2D"]
+    },
+    {
+      "id": 10,
+      "title": "Vadh",
+      "img":"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-OSwgRGVjIDIwMjI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00344525-hmpquyeyuy-portrait.jpg",
+      "Lang": ["Hindi"],
+      "Rating":"UA",
+      "Genre":["Drama","Thriller"],
+      "Form":["2D"]
     }
   ],
   "Moviedesc":[
@@ -142,7 +262,7 @@
       "Genre":["Action","Adventure","Fantasy","Sci-Fi"],
       "Rating":"UA",
       "Trailers":["_Je174KjRNc","70MtMduCaQ0","bS2Uh0B6bqg","Gisg5Bjhk14","mg7zZ40o5lw","v9mKFlmOvPo","xeTc02V2lWU","qIPwrzNEyLQ"],
-      "Interested":"336K",
+      "Interested":"336K are interested",
       "About":"Set more than a decade after the events of the first film, 'Avatar The Way of Water' begins to tell the story of the Sully family (Jake, Neytiri and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive and the tragedies they endure.",
       "ReleaseDate":"Releasing on 16 Dec, 2022",
       "Castname":["Sam Worthington","Zoe Saldana","Sigourney Weaver","Stephen Lang","Cliff Curtis"],
@@ -150,6 +270,26 @@
       "Crewname":["James Cameron","Amanda Silver","Rick Jaffa"],
       "Crewimages":["https://rb.gy/9sdzfn","https://rb.gy/iu2px7","https://rb.gy/ailyno"],
       "Crewdesc":["Director, Writer","Writer","Writer"]
+    },
+    {
+      "id": 2,
+      "title": "Drishyam 2",
+      "img":"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/drishyam-2-et00331997-1667547668.jpg",
+      "imgback":"https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/drishyam-2-et00331997-1667547668.jpg",
+      "Lang": ["Hindi"],
+      "Form":["2D"],
+      "Time":"2h 20m",
+      "Genre":["Drama","Mystery","Thriller"],
+      "Rating":"UA",
+      "Trailers":["tOdJlNKquls","8asVHvoRCcI"],
+      "Interested":"71.7K Votes",
+      "About":"7 years after the case related to Vijay Salgaonkar and his family was closed, a series of unexpected events bring a truth to light that threatens to change everything for the Salgaonkars. Can Vijay save his family this time?",
+      "ReleaseDate":"Released on 18 Nov, 2022",
+      "Castname":["Ajay Devgn","Tabu","Akshaye Khanna","Shriya Saran","Rajat Kapoor"],
+      "Castimages":["https://rb.gy/n7qfcg","https://rb.gy/6aivau","https://rb.gy/ir7esj","https://rb.gy/8rpypu","https://rb.gy/z5si7e"],
+      "Crewname":["Abhishek Pathak","Bhushan Kumar","Kumar Mangat Pathak"],
+      "Crewimages":["https://rb.gy/mu4kqp","https://rb.gy/pslm5g","https://rb.gy/vig6su"],
+      "Crewdesc":["Director, Producer","Producer","Producer"]
     }
   ]
 }

@@ -1,5 +1,43 @@
 import movieslist from "../db.json" assert{type:'json'};
-
+let displayshare=()=>
+{
+    let div=document.createElement("div")
+    let div0=document.createElement("div")
+    let title=document.createElement("h2")
+    title.innerText="Share"
+    let close=document.createElement("h5")
+    close.innerHTML='<i class="fa-solid fa-xmark"></i>'
+    close.addEventListener("click",()=>
+    {
+        document.querySelector("#sharedialog").style.display="none"
+    })
+    close.style.cursor="pointer"
+    div0.append(title,close)
+    div0.setAttribute("class","sim")
+    let div1=document.createElement("div")
+    let div2=document.createElement("div")
+    let div3=document.createElement("div")
+    div1.setAttribute("class","sim")
+    div2.setAttribute("class","sim")
+    div3.setAttribute("class","sim")
+    let fb=document.createElement("h5")
+    fb.innerText="Facebook";
+    let fbicon=document.createElement("h5")
+    fbicon.innerHTML='<i class="fa-brands fa-facebook"></i>'
+    div1.append(fb,fbicon)
+    let Twitter=document.createElement("h5")
+    Twitter.innerText="Twitter"
+    let twiicon=document.createElement("h5")
+    twiicon.innerHTML='<i class="fa-brands fa-twitter"></i>'
+    div2.append(Twitter,twiicon)
+    let copy=document.createElement("h5")
+    copy.innerText="Copy Link"
+    let copyicon=document.createElement("h5")
+    copyicon.innerHTML='<i class="fa-solid fa-copy"></i>'
+    div3.append(copy,copyicon)
+    div.append(div0,div1,div2,div3)
+    document.querySelector("#sharedialog").append(div)
+}
 let displaymoviedesc=()=>
 {
     let name=localStorage.getItem("moviedesc")
@@ -9,13 +47,14 @@ let displaymoviedesc=()=>
     {
         return ele.title==name
     })
-    console.log(data)
+    document.querySelector("#poster").innerHTML=""
+    document.querySelector("#about").innerHTML=""
+    document.querySelector("#Crew").innerHTML=""
+    document.querySelector("#Cast").innerHTML=""
     data.forEach((ele)=>
     {
-        document.querySelector("#poster").innerHTML=""
         let divparent=document.createElement("div")
         divparent.setAttribute("id","divparent")
-        
         divparent.style.backgroundRepeat="no-repeat"
         divparent.style.backgroundSize="cover"
         divparent.style.backgroundImage='linear-gradient(90deg, rgb(26, 26, 26) 24.97%, rgb(26, 26, 26) 38.3%, rgba(26, 26, 26, 0.04) 97.47%, rgb(26, 26, 26) 100%),url('+ele.imgback+')';
@@ -37,31 +76,15 @@ let displaymoviedesc=()=>
         let mtitle=document.createElement("h1")
         mtitle.innerText=ele.title
         let inter=document.createElement("h3")
-        inter.innerHTML='<i class="fa-solid fa-thumbs-up"></i>'+" "+ele.Interested+" are interested"
+        inter.innerHTML='<i class="fa-solid fa-thumbs-up"></i>'+" "+ele.Interested
         let intertext=document.createElement("div")
         let fir=document.createElement("h4")
         fir.innerHTML=ele.ReleaseDate
         let sec=document.createElement("h5")
-        sec.innerHTML="Mark Interested to know when the bookings are open"
+        // sec.innerHTML="Mark Interested to know when the bookings are open"
         intertext.append(fir,sec)
         intertext.setAttribute("id","intertext")
-        let flag=false;
-        intertext.addEventListener("click",()=>
-        {
-            if(flag==false)
-            {
-                inter.innerHTML='<i class="fa-solid fa-thumbs-up"></i>'+" You and"+ele.Interested+" are interested"
-                sec.innerHTML="Your interest has been marked, we will notify you when it releses"
-                flag=true;
-            }
-            else
-            {
-                inter.innerHTML='<i class="fa-solid fa-thumbs-up"></i>'+" "+ele.Interested+" are interested"
-                sec.innerHTML="Mark Interested to know when the bookings are open"
-                flag=false;
-            }
-            
-        })
+        
         let form=document.createElement("h4")
         form.innerText=ele.Form.join(", ");
         form.setAttribute("id","form")
@@ -86,6 +109,10 @@ let displaymoviedesc=()=>
         let share=document.createElement("h4")
         share.innerHTML='<i class="fa-solid fa-share-nodes"></i>'+"  Share"
         share.setAttribute("id","share")
+        share.addEventListener("click",()=>
+        {
+            displayshare();
+        })
         divchild3.append(share)
         divparent.append(divchild1,divchild2,divchild3)
         document.querySelector("#poster").append(divparent)
@@ -127,7 +154,7 @@ displaymoviedesc()
 let displaylike=()=>
 {
     let name=localStorage.getItem("moviedesc")
-    console.log(name)
+    document.querySelector(".swiper-wrapper").innerHTML=""
     let data=movieslist.Delhimovieslist
     data=data.filter((ele)=>
     {
@@ -139,10 +166,29 @@ let displaylike=()=>
         let div=document.createElement("div")
         let img=document.createElement("img")
         img.src=ele.img
-        let title=document.createElement("h2")
-        title.innerText=ele.title
-        div.append(img,title)
-        document.querySelector("#Like").append(div)
+        div.append(img)
+        div.setAttribute("class","swiper-slide")
+        document.querySelector(".swiper-wrapper").append(div)
     })
+    
+    let swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 }
 displaylike()
+document.querySelector("#viewall").addEventListener("click",()=>
+{
+    window.location.href="../html/mainpage.html"
+})
