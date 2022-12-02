@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Procced page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0% auto;
+            font-family: sans-serif;
+            background-color: #F2F2F2;
+        }
+
+        .upperLine {
+            background-color: #1F2533;
+            padding: 1px;
+        }
+
+        .upperLine h3 {
+            color: rgb(226, 230, 238);
+            font-size: 14px;
+            margin-left: 4px;
+        }
+
+        .upperLine i {
+            font-size: 16px;
+        }
+
+        .upperLine h5 {
+            color: rgb(226, 230, 238);
+            font-size: 12px;
+            margin-left: 28px;
+            margin-top: -7px;
+        }
+
+        .secondBlock {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            width: 80%;
+            margin: auto;
+
+        }
+
+        @media screen and (min-width: 600px) and (max-width: 1024px) {
+            .secondBlock {
+                display: grid;
+                grid-template-columns: 1fr;
+
+            }
+        }
+
+        @media screen and (max-device-width: 600px) {
+            .secondBlock {
+                display: grid;
+                grid-template-columns: 1fr;
+
+            }
+        }
+
+        .secondBlock img {
+            width: 100%;
+        }
+
+        .block {
+            display: flex;
+
+        }
+
+        .miniBlock {
+            border: 1px solid rgb(199, 199, 199);
+            margin-right: 20px;
+            border-radius: 15px;
+            padding: 7px;
+            font-size: 10px;
+        }
+
+        .miniBlocks {
+            text-align: center;
+            width: 30px;
+            margin-right: 20px;
+            border-radius: 15px;
+            padding: 7px;
+            font-size: 10px;
+            background-color: #DC3558;
+            color: white;
+        }
+
+        .popCorn h2 {
+            letter-spacing: 4px;
+            text-align: center;
+        }
+
+        .popCorn {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .popCorn p {
+            text-align: center;
+        }
+
+        .popCorn span {
+            color: #DC3558;
+        }
+
+        .infos {
+            width: 50%;
+            margin: auto;
+
+
+        }
+
+        .eatables img {
+            width: 100%;
+
+        }
+
+        .paymentDetails>p {
+            color: #f03202 !important;
+            margin-left: 30px;
+            letter-spacing: 3px;
+        }
+
+        .eatables {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 50px;
+        }
+
+        @media screen and (min-width: 600px) and (max-width: 1024px) {
+            .eatables {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .eatables {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+
+            }
+        }
+
+        .spread {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 10px;
+        }
+
+        .items {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+
+        .items .spread p {
+            text-align: left;
+            font-size: 12px;
+            margin-top: 0px;
+            color: grey;
+        }
+
+        .miniBlock2 {
+            text-align: center;
+            width: 40px;
+            margin-right: 20px;
+            border-radius: 12px;
+            padding: 7px;
+            font-size: 13px;
+            border: 1px solid rgb(215, 212, 212);
+            color: #DC3558;
+        }
+
+        .mainCal {
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            justify-content: space-around;
+            background-color: white;
+        }
+
+        .calculation {
+            padding: 0px 30px;
+        }
+
+
+
+        .calculation span {
+            color: #a7a4a4;
+            font-size: 13px;
+        }
+
+        .calNum {
+            margin-top: 20px;
+        }
+
+        .calculation h6 {
+            font-size: 14px;
+            color: #a7a4a4;
+            margin-top: -10px;
+        }
+
+        .greyBox {
+            background-color: #F5F5F5;
+            padding: 5px 20px;
+            width: 100%;
+        }
+
+        .greyBox h5 {
+            font-size: 11px;
+            color: #8b8a8a;
+        }
+
+        .amount {
+            display: flex;
+            justify-content: space-between;
+            background-color: #FFFCDC;
+            width: 100%;
+            padding: 2px 17px;
+        }
+
+        .totalAmount {
+            display: flex;
+            background-color: #F84464;
+            border-radius: 9px;
+            justify-content: space-between;
+            padding: 0px 10px;
+        }
+
+        .totalAmount p {
+            color: white !important;
+            font-size: 16px !important;
+        }
+
+        .totalAmount input[type=submit] {
+            border: none;
+            background-color: #F84464;
+            color: white;
+            font-size: 17px;
+        }
+
+        .last {
+            margin-top: 60px;
+        }
+
+        .last p {
+            font-size: 13px;
+            color: #787878;
+        }
+
+        .last span {
+            color: #DC3558;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="payment">
+        <div class="upperLine">
+            <h3> <i class="fa-solid fa-arrow-right-to-bracket"></i> &nbsp; Bhediya @</h3>
+            <h5>Ashok Anil Multiplex, Miraj Cinemas: Ulhasnagar | Today, 01 Dec, 05:20 PM</h5>
+        </div>
+
+        <!-- Second block starts -->
+        <div class="secondBlock">
+            <div class="popCorn">
+
+
+                <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1666338238897_855x95.jpg" alt="">
+
+                <div class="infos">
+                    <h2>Grab a <span>bite!</span></h2>
+                    <p>Prebook Your Meal and Save More!</p>
+
+                    <div class="block">
+                        <div class="miniBlocks">ALL</div>
+                        <div class="miniBlock">COMBOS</div>
+                        <div class="miniBlock">POPCORN</div>
+                        <div class="miniBlock">SNACKS</div>
+                        <div class="miniBlock">BEVERAGES</div>
+                    </div>
+                </div>
+
+
+                <!-- images -->
+
+                <div class="eatables">
+                    <div class="items">
+                        <img src="https://in.bmscdn.com/bmsin/v2/Web-v2/d-combo/1174774_04012019152322.jpg" alt="">
+                        <p>Celebration Combo</p>
+                        <div class="spread">
+                            <p>PopCorn Cheese <br> with Family pack</p>
+                            <div id="addpop" class="miniBlock2">Add</div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="https://in.bmscdn.com/bmsin/v2/Web-v2/d-combo/1020003_13082018125740.jpg" alt="">
+                        <p>Celebration Combo</p>
+                        <div class="spread">
+                            <p>PopCorn Cheese <br> with Family pack</p>
+                            <div class="miniBlock2">Add</div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="https://in.bmscdn.com/bmsin/v2/Web-v2/d-combo/1020001_13082018125322.jpg" alt="">
+                        <p>Celebration Combo</p>
+                        <div class="spread">
+                            <p>PopCorn Cheese <br> with Family pack</p>
+                            <div class="miniBlock2">Add</div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="https://in.bmscdn.com/bmsin/v2/Web-v2/d-combo/1020273_29102020182328.jpg" alt="">
+                        <p>Celebration Combo</p>
+                        <div class="spread">
+                            <p>PopCorn Cheese <br> with Family pack</p>
+                            <div class="miniBlock2">Add</div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="https://in.bmscdn.com/bmsin/v2/Web-v2/d-combo/1020080_17082018155618.jpg" alt="">
+                        <p>Celebration Combo</p>
+                        <div class="spread">
+                            <p>PopCorn Cheese <br> with Family pack</p>
+                            <div class="miniBlock2">Add</div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="https://in.bmscdn.com/bmsin/v2/Web-v2/d-combo/1020036_13082018160631.jpg" alt="">
+                        <p>Celebration Combo</p>
+                        <div class="spread">
+                            <p>PopCorn Cheese <br> with Family pack</p>
+                            <div class="miniBlock2">Add</div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="https://in.bmscdn.com/bmsin/v2/Web-v2/d-combo/1174774_04012019152322.jpg" alt="">
+                        <p>Celebration Combo</p>
+                        <div class="spread">
+                            <p>PopCorn Cheese <br> with Family pack</p>
+                            <div class="miniBlock2">Add</div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="https://in.bmscdn.com/bmsin/v2/Web-v2/d-combo/1020003_13082018125740.jpg" alt="">
+                        <p>Celebration Combo</p>
+                        <div class="spread">
+                            <p>PopCorn Cheese <br> with Family pack</p>
+                            <div class="miniBlock2">Add</div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="https://in.bmscdn.com/bmsin/v2/Web-v2/d-combo/1020001_13082018125322.jpg" alt="">
+                        <p>Celebration Combo</p>
+                        <div class="spread">
+                            <p>PopCorn Cheese <br> with Family pack</p>
+                            <div class="miniBlock2">Add</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Details -->
+
+            <div class="paymentDetails">
+                <p>BOOKING SUMMARY</p>
+                <div class="mainCal">
+
+                    <div class="calculation">
+                        <p>GOLD - E7, E8 <span>( 2 Tickets )</span>
+                            <br> <span>SCREEN 2</span>
+                        </p>
+
+                        <br>
+
+                        <h6>Convenience fees</h6>
+
+                        <p>Sub total</p>
+
+
+
+                        <div class="greyBox">
+                            <p>Contribution to BookASmile &nbsp; &nbsp; <span id="ticket"></span>
+                            </p>
+                            <span>(₹1 per ticket has been added)</span>
+                            <h5>VIEW T&C</h5>
+                        </div>
+
+                        <p>Your current state is Maharashtra</p>
+
+                        <div class="amount">
+                            <p>Amount Payable</p>
+                            <p>Rs. <span style="color: black; font-size:16px" id="FinalAmounts"></span> </p>
+                        </div>
+                    </div>
+                    <div class="calNum">
+                        <p>Rs. <span id="TotalTicket"></span> </p>
+
+
+                        <p>Rs.56.64 </p>
+
+                        <p style="margin-top:35px;">Rs.<span id="sub_Total"></span> </p>
+                    </div>
+
+
+                </div>
+
+                <div class="last">
+
+                    <p>By proceeding, I express my consent to complete this transaction.</p>
+
+                    <div class="totalAmount">
+                        <p>TOTAL: <span style="color: white;" id="total"></span></p>
+                        <input onclick="proceed()" type="submit" value="Proceed">
+                    </div>
+                    <p>You can cancel the tickets 4 hour(s) before the show. Refunds will be done according to
+                        <span>Cancellation Policy</span>
+                    </p>
+                </div>
+            </div>
+
+            <!--  -->
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    let data = JSON.parse(localStorage.getItem("numofseats"));
+
+    let ticket = document.getElementById("TotalTicket").innerHTML = 234 * data;
+
+
+
+    let fixed = 56.64;
+    var sum = Number(ticket) + Number(fixed);
+
+    // popcorn
+
+    let addpop = document.getElementById("addpop");
+    addpop.addEventListener("click", function () {
+        let res = 100 + Number(sum);
+    })
+
+    console.log(addpop)
+
+    // function add() {
+    //     res;
+    //     console.log(res)
+    // }
+
+    // end
+
+    let subTotal = document.getElementById("sub_Total");
+    subTotal.innerHTML = sum;
+
+    console.log(sum);
+
+
+
+
+
+
+
+    let ticketlocal = document.getElementById("ticket");
+    ticketlocal.innerHTML = localStorage.getItem("numofseats");
+
+    let totallocal = parseInt(ticketlocal) + sum;
+    //  total ammount
+    let FinalAmounts = document.getElementById("FinalAmounts");
+    FinalAmounts.innerHTML = totallocal;
+
+
+    console.log(FinalAmounts);
+
+
+
+    //  Proceed amount
+    let total = document.getElementById("total");
+    total.innerHTML = totallocal;
+
+
+
+
+
+
+    function proceed() {
+        alert("You have successfully booked your ticket");
+        window.location.href = "";
+    }
+
+</script>

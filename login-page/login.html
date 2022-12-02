@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log In </title>
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+
+<body>
+
+    <div class="login">
+
+
+        <h3>Login</h3>
+
+        <form>
+            <h2>Enter your details</h2>
+
+
+            <div class="txt_field">
+                <input type="email" required placeholder="Enter Email" id="email">
+                <span></span>
+            </div>
+
+
+
+            <div class="txt_field">
+                <input type="password" placeholder="Enter Password" required id="password">
+                <span></span>
+            </div>
+
+
+            <div class="typsub">
+
+                <input type="submit" value="Proceed">
+            </div>
+
+            <div class="signLink">
+                <p>Not a member? <a href="otp.html">Sign in</a></p>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
+
+<script>
+    let data = JSON.parse(localStorage.getItem("inputData"));
+    document.querySelector('form').addEventListener('submit', loginFxn)
+    let loginData = [];
+    function loginFxn(e) {
+        e.preventDefault();
+
+
+
+        let email = document.querySelector('#email').value;
+        let password = document.querySelector('#password').value;
+        // let username = document.querySelector('#name').value
+        let present = data.filter(function (e) {
+            if (email == e.email && password == e.password) {
+                return e;
+            }
+        })
+
+
+        console.log(present);
+
+        localStorage.setItem("loginData", JSON.stringify(present))
+
+        if (present.length == 0) {
+            alert("wrong details entered");
+        }
+        else {
+            alert("Login Sucessfully");
+
+            window.location.href = 'pop.html';
+        }
+
+
+    }
+</script>
