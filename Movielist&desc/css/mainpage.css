@@ -5,6 +5,9 @@
     letter-spacing: 2px;
     margin: 0px;
     padding: 0px;
+}
+#parent
+{
     background-color: #f5f5f5;
 }
 #moviefilter button,.filters option
@@ -103,7 +106,7 @@
 }
 .swiper-wrapper
 {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     margin-top: 20px;
 }
 .swiper {
@@ -128,6 +131,7 @@
     -webkit-align-items: center;
     align-items: center;
   }
+  
 
   .swiper-slide img {
     display: block;
@@ -213,3 +217,7 @@
     margin-top: 20px;
     margin-left: 40%;
   }
+  
+
+
+  

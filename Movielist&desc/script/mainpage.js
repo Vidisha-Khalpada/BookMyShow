@@ -19,10 +19,11 @@ let displayslider=()=>
 }
 displayslider()
 
-//let city=localStorage.getItem("selectcity")
-let city="Delhi"
+let city=localStorage.getItem("city")
+
 if(city=="Delhi")
 {
+    console.log(city)
     document.querySelector("#moviefilter").innerHTML=Delhimovies();
     document.querySelector("#movielist").innerHTML=""
     let fetchdata=async()=>

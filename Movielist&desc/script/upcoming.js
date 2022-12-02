@@ -1,5 +1,5 @@
 //import movieslist from "../db.json" assert{type:'json'};
-import {Delhimovies,displaymovielist,filterformdata,filterlangdata,filtergenredata } from "../utils/utils.js";
+import {Delhimovies,Bengalurumovies,displaymovielist,filterformdata,filterlangdata,filtergenredata } from "../utils/utils.js";
 let displayslider=()=>
 {
     let swiper = new Swiper(".mySwiper", {
@@ -17,8 +17,7 @@ let displayslider=()=>
 }
 displayslider()
 
-//let city=localStorage.getItem("selectcity")
-let city="Delhi"
+let city=localStorage.getItem("city")
 if(city=="Delhi")
 {
     document.querySelector("#moviefilter").innerHTML=Delhimovies();
