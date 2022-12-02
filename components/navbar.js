@@ -5,7 +5,7 @@ function navbar(){
                 <img src="">
             </div>
             <div id="searchbar">
-                <input id="navinput" placeholder="Search for Movies, Events, Plays, Sports and Activities">
+                <input id="navinput" onkeyup="processChange()" placeholder="Search for Movies, Events, Plays, Sports and Activities">
             </div>
             <div id="navbuttons">
                 <div id="navdrop">

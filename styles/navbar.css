@@ -154,6 +154,7 @@
 }
 #logout button{
     width: 95%;
+    margin-top: 40px;
     border-radius: 10px;
     border: 1px solid red;
     background-color: white;
