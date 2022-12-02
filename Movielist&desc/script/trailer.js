@@ -1,8 +1,14 @@
-import movieslist from "../db.json" assert{type:'json'};
-let displaytrailer=()=>
+//import movieslist from "../db.json" assert{type:'json'};
+let fetchdata=async()=>
+    {
+        let res=await fetch(`https://mock-server-app-6y5e.onrender.com/Moviedesc`)
+        let moviedesc=await res.json()
+        displaytrailer(moviedesc)
+    }
+    fetchdata()
+let displaytrailer=(data)=>
 {
     let name=localStorage.getItem("moviedesc")
-    let data=movieslist.Moviedesc
     data=data.filter((ele)=>
     {
         return ele.title==name
@@ -23,4 +29,3 @@ let displaytrailer=()=>
         document.querySelector("#trailer").append(div)
     })
 }
-displaytrailer()

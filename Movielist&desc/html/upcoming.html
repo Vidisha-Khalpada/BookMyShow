@@ -38,44 +38,46 @@
                 <h4 id="langdrop"><i class="fa-solid fa-chevron-down"></i> Languages</h4>
                 <p class="clear" id="clearlang">Clear</p>
             </div>
-            <div class="filters" id="lang">
-                <button id="En" value="English">English</button>
-                <button id="Hi" value="Hindi">Hindi</button>
-                <button id="Ta" value="Tamil">Tamil</button>
-                <button id="Ha" value="Haryanvi">Haryanvi</button>
-                <button id="Te" value="Telegu">Telegu</button>
-                <button id="Ka" value="Kannada">Kannada</button>
-            </div>
-            
-            <div id="Genres">
-                <h4 id="gendrop"><i class="fa-solid fa-chevron-down"></i> Genres</h4>
-                <p class="clear" id="cleargen">Clear</p>
-            </div>
-            <div class="filters" id="gen">
-                <button id="Dr" value="Drama">Drama</button>
-                <button id="Th" value="Thriller">Thriller</button>
-                <button id="Ad" value="Adventure">Adventure</button>
-                <button id="Ro" value="Romantic">Romantic</button>
-                <button id="Co" value="Comedy">Comedy</button>
-                <button id="An" value="Anime">Anime</button>
-            </div>
-            <div id="Format">
-                <h4 id="formdrop"><i class="fa-solid fa-chevron-down"></i> Format</h4>
-                <p class="clear" id="clearform">Clear</p>
-            </div>
-            <div class="filters" id="form">
-                <button id="D2" value="2D">2D</button>
-                <button id="D3" value="3D">3D</button>
-                <button id="X43D" value="4DX 3D">4DX 3D</button>
-                <button id="D7" value="7D">7D</button>
-                <button id="IMAX3D" value="IMAX 3D">IMAX 3D</button>
-        </div>
+            <select class="filters" id="lang">
+              <option value="">Select a Language</option>
+              <option value="English">English</option>
+              <option value="Hindi">Hindi</option>
+              <option value="Tamil">Tamil</option>
+              <option value="Haryanvi">Haryanvi</option>
+              <option value="Telegu">Telegu</option>
+              <option value="Kannada">Kannada</option>
+          </select>
+          <div id="Genres">
+              <h4 id="gendrop"><i class="fa-solid fa-chevron-down"></i> Genres</h4>
+              <p class="clear" id="cleargen">Clear</p>
+          </div>
+          <select class="filters" id="gen">
+              <option value="">Select a Genre</option>
+              <option value="Drama">Drama</option>
+              <option value="Thriller">Thriller</option>
+              <option value="Adventure">Adventure</option>
+              <option value="Romantic">Romantic</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Anime">Anime</button>
+          </select>
+          <div id="Format">
+              <h4 id="formdrop"><i class="fa-solid fa-chevron-down"></i> Format</h4>
+              <p class="clear" id="clearform">Clear</p>
+          </div>
+          <select class="filters" id="form">
+              <option value="">Select a Form</option>
+              <option value="2D">2D</option>
+              <option value="3D">3D</option>
+              <option value="4DX 3D">4DX 3D</option>
+              <option value="7D">7D</option>
+              <option value="IMAX 3D">IMAX 3D</option>
+        </select>
         </div>
         <div id="moviedisplay">
             <div id="moviefilter"> </div>
             <div id="upcoming">
-                <h3>Coming Soon</h3>
-                <h4>Explore Upcoming Movies  ></h4>
+                <h3>Now Showing</h3>
+                <h4>In Cinemas near you  ></h4>
             </div>
             <div id="movielist"></div>
         </div>
@@ -83,6 +85,6 @@
     </div>
 </body>
 </html>
-<script type="module" src="../script/mainpage.js"></script>
+<script type="module" src="../script/upcoming.js"></script>
 <script src="https://kit.fontawesome.com/646ce80a81.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

@@ -4,7 +4,7 @@ let Delhimovies=()=>
 }
 let Bengalurumovies=()=>
 {
- return `<h1>Movies in Delhi</h1>`
+ return `<h1>Movies in Bengaluru</h1>`
 }
 
 let displaymovielist=(ele)=>
@@ -30,47 +30,33 @@ let displaymovielist=(ele)=>
     div.append(img,title,rating,lang)
     document.querySelector("#movielist").append(div)
 }
-let filterlangdata=(data,id)=>
+let filterlangdata=(data,lang)=>
 {
-    let l1=document.querySelector(id).value;
-    console.log(id)
     document.querySelector("#movielist").innerHTML=""
     let arr=data.filter((ele)=>
     {
-        return (ele.Lang.includes(l1))
+        return (ele.Lang.includes(lang))
     })
-    arr.forEach((ele)=>
-    {
-        displaymovielist(ele);
-    })
+    return arr
 }
-let filtergenredata=(data,id)=>
+let filtergenredata=(data,gen)=>
 {
-    let l1=document.querySelector(id).value;
-    console.log(l1)
     document.querySelector("#movielist").innerHTML=""
     let arr=data.filter((ele)=>
     {
-        return (ele.Genre.includes(l1))
+        return (ele.Genre.includes(gen))
     })
-    arr.forEach((ele)=>
-    {
-        displaymovielist(ele);
-    })
+    return arr
 }
-let filterformdata=(data,id)=>
+let filterformdata=(data,form)=>
 {
-    let l1=document.querySelector(id).value;
-    console.log(l1)
+    
     document.querySelector("#movielist").innerHTML=""
     let arr=data.filter((ele)=>
     {
-        return (ele.Form.includes(l1))
+        return (ele.Form.includes(form))
     })
-    arr.forEach((ele)=>
-    {
-        displaymovielist(ele);
-    })
+    return arr;
 }
 
 export {Delhimovies,Bengalurumovies,displaymovielist,filterformdata,filterlangdata,filtergenredata}

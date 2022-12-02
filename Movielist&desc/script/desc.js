@@ -1,6 +1,8 @@
-import movieslist from "../db.json" assert{type:'json'};
+//import movieslist from "../db.json" assert{type:'json'};
 let displayshare=()=>
 {
+    document.querySelector("#sharedialog").style.display="block"
+    document.querySelector("#sharedialog").innerHTML=""
     let div=document.createElement("div")
     let div0=document.createElement("div")
     let title=document.createElement("h2")
@@ -38,11 +40,10 @@ let displayshare=()=>
     div.append(div0,div1,div2,div3)
     document.querySelector("#sharedialog").append(div)
 }
-let displaymoviedesc=()=>
+let displaymoviedesc=(data)=>
 {
     let name=localStorage.getItem("moviedesc")
     console.log(name)
-    let data=movieslist.Moviedesc
     data=data.filter((ele)=>
     {
         return ele.title==name
@@ -147,15 +148,27 @@ let displaymoviedesc=()=>
         }
     })
     
-    
 }
-displaymoviedesc()
+let fetchdata=async()=>
+    {
+        let res=await fetch(`https://mock-server-app-6y5e.onrender.com/Moviedesc`)
+        let moviedesc=await res.json()
+        displaymoviedesc(moviedesc)
+    }
+    fetchdata()
+let fetchmaindata=async()=>
+    {
+        let res=await fetch(`https://mock-server-app-6y5e.onrender.com/Delhimovieslist`)
+        let Delhimovieslist=await res.json()
+        displaylike(Delhimovieslist)
+    }
+    fetchmaindata()
 
-let displaylike=()=>
+let displaylike=(data)=>
 {
     let name=localStorage.getItem("moviedesc")
     document.querySelector(".swiper-wrapper").innerHTML=""
-    let data=movieslist.Delhimovieslist
+    //let data=movieslist.Delhimovieslist
     data=data.filter((ele)=>
     {
         return ele.title!==name
@@ -187,7 +200,6 @@ let displaylike=()=>
         },
       });
 }
-displaylike()
 document.querySelector("#viewall").addEventListener("click",()=>
 {
     window.location.href="../html/mainpage.html"
