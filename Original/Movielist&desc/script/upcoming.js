@@ -1,8 +1,4 @@
-import movieslist from "../mock-server-app/db.json" assert{type:'json'};
-let Delhimovieslist=movieslist.Delhimovieslist
-let Bengalurumovieslist=movieslist.Bengalurumovieslist
-let upcomingmovies=movieslist.upcomingmovies
-let Moviedesc=movieslist.Moviedesc
+//import movieslist from "../db.json" assert{type:'json'};
 import {Delhimovies,Bengalurumovies,displaymovielist,filterformdata,filterlangdata,filtergenredata } from "../utils/utils.js";
 let displayslider=()=>
 {
@@ -26,13 +22,13 @@ if(city=="Delhi")
 {
     document.querySelector("#moviefilter").innerHTML=Delhimovies();
     document.querySelector("#movielist").innerHTML=""
-    // let fetchdata=async()=>
-    // {
-    //     let res=await fetch(`https://mock-server-app-6y5e.onrender.com/upcomingmovies`)
-    //     let Delhimovieslist=await res.json()
-    //     displaydata(Delhimovieslist)
-    // }
-    //fetchdata()
+    let fetchdata=async()=>
+    {
+        let res=await fetch(`https://mock-server-app-6y5e.onrender.com/upcomingmovies`)
+        let Delhimovieslist=await res.json()
+        displaydata(Delhimovieslist)
+    }
+    fetchdata()
     let displaydata=(Delhimovieslist)=>
     {
         document.querySelector("#movielist").innerHTML=""
@@ -107,19 +103,19 @@ if(city=="Delhi")
         })
     }
   
-    displaydata(Delhimovieslist)
+    
 }
 else if(city=="Bengaluru")
 {
     document.querySelector("#moviefilter").innerHTML=Bengalurumovies();
     document.querySelector("#movielist").innerHTML=""
-    // let fetchdata=async()=>
-    // {
-    //     let res=await fetch(`https://mock-server-app-6y5e.onrender.com/upcomingmovies`)
-    //     let Bengalurumovieslist=await res.json()
-    //     displaydata(Bengalurumovieslist)
-    // }
-    // fetchdata()
+    let fetchdata=async()=>
+    {
+        let res=await fetch(`https://mock-server-app-6y5e.onrender.com/upcomingmovies`)
+        let Bengalurumovieslist=await res.json()
+        displaydata(Bengalurumovieslist)
+    }
+    fetchdata()
     let displaydata=(Bengalurumovieslist)=>
     {
         Bengalurumovieslist.forEach((ele)=>
@@ -192,7 +188,7 @@ else if(city=="Bengaluru")
             })
         })
     }
-    displaydata(Bengalurumovieslist)
+  
     
 }
 

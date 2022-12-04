@@ -1,0 +1,135 @@
+
+body {
+    margin: 0px;
+}
+
+.mainFooter {
+    background-color: #313035;
+}
+
+footer {
+    width: 80%;
+    margin: auto;
+}
+footer .foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FooterHaed {
+    background-color: #313035;
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+
+.FooterHaed h5 {
+    font-size: 17px;
+    margin-right: 13px;
+    margin-left: 4px;
+    color: #f4f4f4;
+}
+
+.FooterHaed p {
+    color: #f4f4f4;
+    font-size: 15px;
+
+}
+
+.FooterHaed+div button {
+    background-color: #EC5E71;
+    padding: 8px 10px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    border-radius: 4px;
+}
+
+
+.middleFooter {
+    background-color: #404043;
+    padding: 10px;
+
+}
+
+.contentFoot {
+    background-color: #404043;
+
+}
+
+.middleFooter,
+.contentFoot {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.contentFoot p {
+    font-size: 10px;
+    color: rgb(198, 198, 199);
+    margin-top: 15px;
+}
+
+.middleFooter svg {
+    fill: rgb(198, 198, 199);
+}
+
+.bottomFooter {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    background-color: #313035
+}
+
+.bottomFooter h5 {
+    color: rgb(198, 198, 199);
+    font-size: 12px;
+}
+
+.bottomFooter p {
+    color: rgb(198, 198, 199);
+    font-size: 10px;
+}
+
+.last {
+    width: 10%;
+    margin: auto;
+}
+
+.last img {
+    display: flex;
+    justify-content: center;
+
+}
+
+.socialMedia i {
+    margin-right: 5px;
+}
+
+.socialMedia {
+    width: 15%;
+    margin: auto;
+    font-size: 22px;
+    color: rgb(198, 198, 199);
+    margin-top: 40px;
+}
+
+.socialMedia+p {
+    color: rgb(151, 149, 149);
+    font-size: 10px;
+    width: 20%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.ptag p {
+    color: rgb(174, 174, 174);
+    font-size: 10px;
+    width:90%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    margin-top: -8px;
+    padding-bottom: 50px;
+}

@@ -1,8 +1,4 @@
-import movieslist from "../mock-server-app/db.json" assert{type:'json'};
-let Delhimovieslist=movieslist.Delhimovieslist
-let Bengalurumovieslist=movieslist.Bengalurumovieslist
-let upcomingmovies=movieslist.upcomingmovies
-let Moviedesc=movieslist.Moviedesc
+//import movieslist from "../db.json" assert{type:'json'};
 let displayshare=()=>
 {
     document.querySelector("#sharedialog").style.display="block"
@@ -107,8 +103,7 @@ let displaymoviedesc=(data)=>
         button.setAttribute("id","BT")
         button.addEventListener("click",()=>
         {
-            localStorage.setItem("moviename",ele.title)
-            window.location.href="../../Timings/showTiming.html"
+            window.location.href="../booktickets.html"
         })
         divchild2.append(mtitle,inter,intertext,form,lang,rtime,gen,rat,button)
         let divchild3=document.createElement("div")
@@ -154,21 +149,20 @@ let displaymoviedesc=(data)=>
     })
     
 }
-displaymoviedesc(Moviedesc)
-// let fetchdata=async()=>
-//     {
-//         let res=await fetch(`https://mock-server-app-6y5e.onrender.com/Moviedesc`)
-//         let moviedesc=await res.json()
-//         displaymoviedesc(moviedesc)
-//     }
-//     fetchdata()
-// let fetchmaindata=async()=>
-//     {
-//         let res=await fetch(`https://mock-server-app-6y5e.onrender.com/Delhimovieslist`)
-//         let Delhimovieslist=await res.json()
-//         displaylike(Delhimovieslist)
-//     }
-//     fetchmaindata()
+let fetchdata=async()=>
+    {
+        let res=await fetch(`https://mock-server-app-6y5e.onrender.com/Moviedesc`)
+        let moviedesc=await res.json()
+        displaymoviedesc(moviedesc)
+    }
+    fetchdata()
+let fetchmaindata=async()=>
+    {
+        let res=await fetch(`https://mock-server-app-6y5e.onrender.com/Delhimovieslist`)
+        let Delhimovieslist=await res.json()
+        displaylike(Delhimovieslist)
+    }
+    fetchmaindata()
 
 let displaylike=(data)=>
 {
@@ -206,8 +200,6 @@ let displaylike=(data)=>
         },
       });
 }
-
-displaylike(Delhimovieslist)
 document.querySelector("#viewall").addEventListener("click",()=>
 {
     window.location.href="../html/mainpage.html"

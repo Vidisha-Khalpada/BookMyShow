@@ -1,0 +1,66 @@
+body {
+    font-family: Roboto,sans-serif;
+}
+.mainDiv {
+	border: 1px solid gray;
+	padding: 20px;
+	display: flex;
+}
+
+.movieHallNameDiv {
+	font-weight: bold;
+}
+
+.loveMovieHallName:hover {
+	color: red;
+	cursor: pointer;
+	transition: fill .3s;
+	stroke-width: 5px;
+}
+
+.foodIcon {
+	height: 20px;
+	color: orange;
+}
+
+.ticketBeverageDiv {
+	color: orange;
+}
+
+.leftDiv {
+	flex: 1;
+}
+
+/* Mid div */
+
+.midDiv {
+	flex: 1;
+}
+
+.midDiv p {
+	font-size: 12px;
+	color: rgb(124, 115, 115);
+}
+
+/* Right div */
+.timeDiv {
+	display: flex;
+	gap: 25px;
+}
+
+.rightDiv {
+	flex: 2;
+}
+
+.times {
+	border: 1px solid gray;
+	border-radius: 5px;
+	padding: 2px 20px;
+	color: #79c1b1;
+	font-weight: 500;
+    cursor: pointer;
+}
+
+.cancellationDiv p {
+	color: rgb(124, 115, 115);
+}

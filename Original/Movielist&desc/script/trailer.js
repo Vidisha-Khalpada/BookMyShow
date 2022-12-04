@@ -1,16 +1,11 @@
-import movieslist from "../mock-server-app/db.json" assert{type:'json'};
-let Delhimovieslist=movieslist.Delhimovieslist
-let Bengalurumovieslist=movieslist.Bengalurumovieslist
-let upcomingmovies=movieslist.upcomingmovies
-let Moviedesc=movieslist.Moviedesc
-// let fetchdata=async()=>
-//     {
-//         let res=await fetch(`https://mock-server-app-6y5e.onrender.com/Moviedesc`)
-//         let moviedesc=await res.json()
-//         displaytrailer(moviedesc)
-//     }
-//     fetchdata()
-
+//import movieslist from "../db.json" assert{type:'json'};
+let fetchdata=async()=>
+    {
+        let res=await fetch(`https://mock-server-app-6y5e.onrender.com/Moviedesc`)
+        let moviedesc=await res.json()
+        displaytrailer(moviedesc)
+    }
+    fetchdata()
 let displaytrailer=(data)=>
 {
     let name=localStorage.getItem("moviedesc")
@@ -34,4 +29,3 @@ let displaytrailer=(data)=>
         document.querySelector("#trailer").append(div)
     })
 }
-displaytrailer(Moviedesc)

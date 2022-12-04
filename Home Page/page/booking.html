@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #fafafa;
+    }
+    #movie {
+      width: 65%;
+      margin: auto;
+    }
+    #movie > span {
+      text-transform: capitalize;
+      color: #a5aba5;
+      font-size: 14px;
+    }
+    #seat {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 5px;
+      text-align: center;
+      justify-content: center;
+    }
+    .span {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+    }
+    .span > div {
+      display: flex;
+      width: 95%;
+      gap: 5px;
+      justify-content: center;
+    }
+    .span > div > div {
+      width: 25px;
+      height: 25px;
+      display: flex;
+      border: 2px solid #1ea83c;
+      color: #1ea83c;
+      align-items: center;
+      justify-content: center;
+    }
+    .span > div > div:hover {
+      background-color: #1ea83c;
+      color: #fff;
+    }
+    .span span {
+      color: #a5aba5;
+    }
+    hr {
+      margin: 10px;
+    }
+    /* navbar */
+
+    #header * {
+      color: #fff;
+    }
+    #header {
+      display: flex;
+      background-color: #1f2533;
+      justify-content: space-between;
+      height: 5rem;
+      align-items: center;
+      padding: 0 25px;
+    }
+    #header a {
+      text-decoration: none;
+    }
+    #right,
+    #left {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    #back img {
+      color: #fff;
+      transform: rotate(180deg);
+    }
+    #back {
+      font-size: 24px;
+      font-weight: 900;
+    }
+    #left button {
+      border: none;
+      padding: 5px;
+      cursor: pointer;
+      background-color: transparent;
+    }
+    #left button:first-child {
+      border: 2px solid #fff;
+    }
+    #left img {
+      height: 13px;
+    }
+    /* time */
+    #time {
+      margin-bottom: 20px;
+      /* display: flex; */
+      align-content: center;
+      padding: 10px 0px 20px 30px;
+    }
+    #timing {
+      width: 100px;
+      background: #2dc492;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+    #screen {
+      width: 70%;
+      margin: 100px auto 50px auto;
+      height: 25px;
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      color: #a5aba5;
+    }
+    #seats {
+      width: 100%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      bottom: 0;
+      padding: 10px 0;
+      z-index: 98;
+    }
+    #seats > div {
+      height: 20px;
+      width: 20px;
+      margin: 0 10px;
+    }
+    #sold {
+      border: 1px solid #1ea83c;
+    }
+    #free {
+      background-color: #a5aba5;
+    }
+    #select {
+      background-color: #1ea83c;
+    }
+    #seats > span {
+      color: #a5aba5;
+    }
+  </style>
+  <body onload="fun()">
+    <div id="box">
+      <div id="header">
+        <div id="right">
+          <a href="./home.html" id="back">
+            <img src="../util/arrow.png" alt="" />
+          </a>
+          <div id="info">
+            <!-- get name of movie from localstorage in place of dummy-->
+            <div id="localstorage">dummy</div>
+            <!-- get name of mall name timeing from localstorage -->
+            <div id="detail">
+              INOX: City Centre II, Rajarhat | Today, 02 Dec, 09:45 AM
+            </div>
+          </div>
+        </div>
+        <div id="left">
+          <!-- create a click event and like ticket page -->
+          <button id="btm">
+            <span>2</span>
+            <span>Ticket</span>
+          </button>
+          <button id="backbtm">
+            <!-- give mall page link in a tag -->
+            <a href=""></a>
+            <img src="../style/close.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div id="time">
+        <!-- append time -->
+        <div id="timing">09.45AM</div>
+      </div>
+      <div id="movie">
+        <span>premium seats : 100 rs</span>
+        <hr />
+        <section id="seat"></section>
+        <hr />
+        <div id="screen">Screen</div>
+      </div>
+      <div id="seats">
+        <div id="sold"></div>
+        <span>Sold</span>
+        <div id="free"></div>
+        <span>Available</span>
+        <div id="select"></div>
+        <span>Selected</span>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  let fun = () => {
+    for (let i = 0; i < 10; i++) {
+      let maindiv = document.createElement("div");
+      let span = document.createElement("span");
+      let alfa = String.fromCharCode(65 + i);
+      span.innerHTML = String.fromCharCode(65 + i);
+      maindiv.setAttribute("class", alfa);
+      for (let j = 0; j < 10; j++) {
+        let div = document.createElement("div");
+        div.innerText = j;
+        div.setAttribute("class", alfa + j);
+        maindiv.append(div);
+      }
+      let box = document.createElement("div");
+      box.setAttribute("class", "span");
+      box.append(span, maindiv);
+      document.getElementById("seat").append(box);
+    }
+  };
+</script>

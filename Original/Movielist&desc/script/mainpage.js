@@ -1,9 +1,7 @@
-import movieslist from "../mock-server-app/db.json" assert{type:'json'};
-let Delhimovieslist=movieslist.Delhimovieslist
-let Bengalurumovieslist=movieslist.Bengalurumovieslist
-let upcomingmovies=movieslist.upcomingmovies
-let Moviedesc=movieslist.Moviedesc
+//import movieslist from "../db.json" assert{type:'json'};
+
 import {Delhimovies,Bengalurumovies,displaymovielist,filterformdata,filterlangdata,filtergenredata } from "../utils/utils.js";
+
 let displayslider=()=>
 {
     let swiper = new Swiper(".mySwiper", {
@@ -22,17 +20,19 @@ let displayslider=()=>
 displayslider()
 
 let city=localStorage.getItem("city")
+
 if(city=="Delhi")
 {
+    console.log(city)
     document.querySelector("#moviefilter").innerHTML=Delhimovies();
     document.querySelector("#movielist").innerHTML=""
-    // let fetchdata=async()=>
-    // {
-    //     let res=await fetch(`https://mock-server-app-6y5e.onrender.com/upcomingmovies`)
-    //     let Delhimovieslist=await res.json()
-    //     displaydata(Delhimovieslist)
-    // }
-    //fetchdata()
+    let fetchdata=async()=>
+    {
+        let res=await fetch(`https://mock-server-app-6y5e.onrender.com/Delhimovieslist`)
+        let Delhimovieslist=await res.json()
+        displaydata(Delhimovieslist)
+    }
+    fetchdata()
     let displaydata=(Delhimovieslist)=>
     {
         document.querySelector("#movielist").innerHTML=""
@@ -107,21 +107,22 @@ if(city=="Delhi")
         })
     }
   
-    displaydata(Delhimovieslist)
+    
 }
 else if(city=="Bengaluru")
 {
     document.querySelector("#moviefilter").innerHTML=Bengalurumovies();
     document.querySelector("#movielist").innerHTML=""
-    // let fetchdata=async()=>
-    // {
-    //     let res=await fetch(`https://mock-server-app-6y5e.onrender.com/upcomingmovies`)
-    //     let Bengalurumovieslist=await res.json()
-    //     displaydata(Bengalurumovieslist)
-    // }
-    // fetchdata()
+    let fetchdata=async()=>
+    {
+        let res=await fetch(`https://mock-server-app-6y5e.onrender.com/Bengalurumovieslist`)
+        let Bengalurumovieslist=await res.json()
+        displaydata(Bengalurumovieslist)
+    }
+    fetchdata()
     let displaydata=(Bengalurumovieslist)=>
     {
+        document.querySelector("#movielist").innerHTML=""
         Bengalurumovieslist.forEach((ele)=>
         {
             displaymovielist(ele)
@@ -192,7 +193,7 @@ else if(city=="Bengaluru")
             })
         })
     }
-    displaydata(Bengalurumovieslist)
+  
     
 }
 
@@ -250,7 +251,7 @@ document.querySelector("#formdrop").addEventListener("click",()=>
 })
 document.querySelector("#upcoming").addEventListener("click",()=>
 {
-    window.location.href="../html/mainpage.html"
+    window.location.href="../html/upcoming.html"
 })
 document.querySelector("#filtericon").addEventListener("click",()=>
 {
