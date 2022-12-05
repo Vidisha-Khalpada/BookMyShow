@@ -7,15 +7,16 @@ document.getElementById("mySidebar").innerHTML = sidebar();
 
 //saving city name in local storage
 document.getElementById('navdropcontent').addEventListener('change', function () {
-  console.log(this.value);
+  //console.log(this.value);
   localStorage.setItem('city', this.value)
+  window.location.reload()
 });
 
 document.querySelector("#navsign").addEventListener("click", () => {
-  window.location.href = "../../login-page/login.html"
+  window.location.href = "../BookMyShow/login-page/login.html"
 })
 document.querySelector("#navlogo").addEventListener("click", () => {
-  window.location.href = "../../Home Page/page/index.html"
+  window.location.href = "../../BookMyShow/index.html"
 })
 
 //place it inside login function

@@ -76,7 +76,6 @@
 #filtersection
 {
     width: 20%;
-    background-color: white;
 }
 #Languages,#Genres,#Format
 {
@@ -174,6 +173,8 @@
     #filtersection
     {
         display: none;
+        
+    background-color: white;
     }
     #moviedisplay
     {
@@ -198,6 +199,8 @@
     #filtersection
     {
         display: none;
+        
+    background-color: white;
     }
     
     #moviedisplay
