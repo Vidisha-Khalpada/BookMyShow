@@ -143,6 +143,6 @@ function display(data) {
 display(data);
 document.querySelectorAll(".swiper-wrapper").forEach((div) => {
   div.addEventListener("click", function () {
-    window.location.href = "../../Movielist&desc/html/desc.html";
+    window.location.href = "../../Movielist&desc/html/mainpage.html";
   });
 });
