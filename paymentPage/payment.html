@@ -299,7 +299,8 @@
                         <p>Celebration Combo</p>
                         <div class="spread">
                             <p>PopCorn Cheese <br> with Family pack</p>
-                            <div id="addpop" class="miniBlock2">Add</div>
+                            <button id="addpop" style="background: none;" class="miniBlock2">Add</button>
+                            
                         </div>
                     </div>
                     <div class="items">
@@ -450,14 +451,18 @@
     let fixed = 56.64;
     var sum = Number(ticket) + Number(fixed);
 
+    let subTotal;
+
     // popcorn
-
+    let res = 100;
     let addpop = document.getElementById("addpop");
-    addpop.addEventListener("click", function () {
-        let res = 100 + Number(sum);
+    addpop.addEventListener('click', function () {
+        sum += 100;
+        alert(sum)
+       
     })
-
-    console.log(addpop)
+     addpop.style.cursor = "pointer"
+    console.log(sum)
 
     // function add() {
     //     res;
@@ -466,9 +471,9 @@
 
     // end
 
-    let subTotal = document.getElementById("sub_Total");
+    subTotal = document.getElementById("sub_Total");
     subTotal.innerHTML = sum;
-    
+
     console.log(sum);
 
 
@@ -480,11 +485,11 @@
     let ticketlocal = document.getElementById("ticket");
     ticketlocal.innerHTML = localStorage.getItem("numofseats");
 
-    let totallocal = parseInt(ticketlocal) + sum;
+    let totallocal = Number(ticketlocal);
     //  total ammount
     let FinalAmounts = document.getElementById("FinalAmounts");
-    FinalAmounts.innerHTML = totallocal;
-    
+    FinalAmounts.innerHTML = data + sum;
+
 
     console.log(FinalAmounts);
 
@@ -492,7 +497,7 @@
 
     //  Proceed amount
     let total = document.getElementById("total");
-    total.innerHTML = totallocal;
+    total.innerHTML = data + sum;
 
 
 
@@ -501,7 +506,7 @@
 
     function proceed() {
         alert("You have successfully booked your ticket");
-        window.location.href = "";
+        window.location.href = "../Home Page/page/index.html";
     }
 
 </script>
