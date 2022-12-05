@@ -14,6 +14,9 @@ document.getElementById('navdropcontent').addEventListener('change', function ()
 document.querySelector("#navsign").addEventListener("click", () => {
   window.location.href = "../../login-page/login.html"
 })
+document.querySelector("#navlogo").addEventListener("click", () => {
+  window.location.href = "../../Home Page/page/index.html"
+})
 
 //place it inside login function
 // localStorage.setItem('logged', 'no');
