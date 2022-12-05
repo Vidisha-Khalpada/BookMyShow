@@ -266,8 +266,8 @@
 
     <div class="payment">
         <div class="upperLine">
-            <h3> <i class="fa-solid fa-arrow-right-to-bracket"></i> &nbsp; Bhediya @</h3>
-            <h5>Ashok Anil Multiplex, Miraj Cinemas: Ulhasnagar | Today, 01 Dec, 05:20 PM</h5>
+            <h3> <i class="fa-solid fa-arrow-right-to-bracket"></i> &nbsp; <span id="moviename"></span></h3>
+            <h5 id="showdetails"></h5>
         </div>
 
         <!-- Second block starts -->
@@ -499,7 +499,14 @@
     let total = document.getElementById("total");
     total.innerHTML = data + sum;
 
-
+    let moviename=localStorage.getItem("moviename")
+    document.querySelector("#moviename").innerHTML=moviename+" @"
+    const date=new Date();
+    let day=date.getDate();
+    let month=date.getMonth()+1;
+    let time=date.getHours()+1
+    let year=date.getFullYear()
+    document.querySelector("#showdetails").innerHTML="INOX: City Centre II, Noida | Today, "+day+"/"+month+"/"+year+" , "+time+":00"
 
 
 

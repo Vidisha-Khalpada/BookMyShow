@@ -76,6 +76,7 @@
 #filtersection
 {
     width: 20%;
+    background-color: white;
 }
 #Languages,#Genres,#Format
 {
@@ -141,6 +142,7 @@
   }
   #filtericon
   {
+    background-color: white;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
