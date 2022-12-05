@@ -106,6 +106,7 @@
 }
 #premium-img > img {
   height: 65px;
+  width: 100%;
 }
 #premium-header {
   margin: 20px 0;
