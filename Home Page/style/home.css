@@ -87,9 +87,30 @@
   background: #40d3dc;
 }
 
+#movieall {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  justify-content: space-between;
+}
+#movieall a {
+  text-decoration: none;
+  color: salmon;
+}
+#seeall {
+  margin: auto;
+}
+
+#search {
+  width: 70%;
+  margin: auto;
+  display: none;
+}
+
 #header {
   margin: 20px 0;
   font-size: 18px;
+  width: 90%;
 }
 
 /* movies page */
