@@ -1,6 +1,6 @@
 import movieslist from "../mock-server-app/db.json" assert{type:'json'};
-let Delhimovieslist=movieslist.Delhimovieslist
-let Bengalurumovieslist=movieslist.Bengalurumovieslist
+let Bengalurumovieslist=movieslist.upcomingmovies
+let Delhimovieslist=movieslist.upcomingmovies
 let upcomingmovies=movieslist.upcomingmovies
 let Moviedesc=movieslist.Moviedesc
 import {Delhimovies,Bengalurumovies,displaymovielist,filterformdata,filterlangdata,filtergenredata } from "../utils/utils.js";
