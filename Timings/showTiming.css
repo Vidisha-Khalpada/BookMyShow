@@ -1,10 +1,14 @@
-body {
-    font-family: Roboto,sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*
+{
+    font-family:'PT Sans', sans-serif;
+    letter-spacing: 1px;
 }
 .mainDiv {
-	border: 1px solid gray;
+	
 	padding: 20px;
 	display: flex;
+	gap: 10px;
 }
 
 .movieHallNameDiv {
@@ -64,3 +68,63 @@ body {
 .cancellationDiv p {
 	color: rgb(124, 115, 115);
 }
+#moviedesc
+{
+	background-color: #333545;
+	color: white;
+	padding: 20px 0px 10px;
+	width: 100%;
+}
+#card,#dates,.mainDiv
+{
+	padding-left:100px ;
+}
+.desc
+{
+	width: 20%;
+	border: 2px solid #646672;
+	padding: 10px;
+	border-radius: 10px;
+}
+.rating
+{
+	width: 5%;
+	padding: 10px;
+	border: 2px solid white;
+	border-radius: 10%;
+	text-align: center;
+}
+.datebtn
+{
+	cursor: pointer;
+	padding: 15px;
+	margin: 20px 20px 20px 0px;
+	border: none;
+	background-color: #f84464;
+	color: white;
+	font-weight: bold;
+}
+@media screen and (max-width: 430px) 
+{
+	.timeDiv {
+		display: grid;
+		grid-template-columns: repeat(1,1fr);
+		gap: 25px;
+		margin-right: 20px;
+	}
+}
+@media screen and (min-width: 431px) and (max-width: 1024px) 
+{
+	.timeDiv {
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		gap: 25px;
+		margin-right: 20px;
+	}
+}
+
+
+
+
+
+

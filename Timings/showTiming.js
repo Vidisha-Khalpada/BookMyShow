@@ -1,116 +1,154 @@
-
-
-let paginate_data = paginate(data, size, page);
-displayData(paginate_data);
-
-document.getElementById("searchButton").addEventListener("click", handleSearch);
-
-function paginate(array, size, page) {
-  return array.slice((page - 1) * size, page * size);
+import movieslist from "../Movielist&desc/mock-server-app/db.json" assert{type:'json'};
+let displaymovietitle=()=>
+{
+  let name=localStorage.getItem("moviename")
+  document.querySelector("#moviedesc").innerHTML=""
+  movieslist.Delhimovieslist.forEach((ele)=>
+  {
+    if(ele.title==name)
+    {
+      let div=document.createElement("div")
+      let title=document.createElement("h1")
+      title.innerHTML=ele.title+" - "+ele.Lang.join(", ")
+      let rating=document.createElement("h4")
+      rating.innerHTML=ele.Rating
+      rating.setAttribute("class","rating")
+      let genre=document.createElement("h4")
+      genre.innerHTML=ele.Genre.join(", ")
+      genre.setAttribute("class","desc")
+      div.append(title,rating,genre)
+      div.setAttribute("id","card")
+      document.querySelector("#moviedesc").append(div)
+    }
+  })
 }
-
-function filterByRole() {
-  var selected = document.getElementById("role").value;
-  var newData = data.filter((ele) => ele.role === selected);
-  displayData(newData);
+displaymovietitle()
+let displaydate=()=>
+{
+  document.querySelector("#dates").innerHTML=""
+  let date1=document.createElement("button")
+  date1.setAttribute("class","datebtn")
+  date1.addEventListener("click",()=>
+  {
+    displaytodaytime()
+  })
+  let date2=document.createElement("button")
+  date2.setAttribute("class","datebtn")
+  date2.addEventListener("click",()=>
+  {
+    displayshowtime()
+  })
+  let date3=document.createElement("button")
+  date3.setAttribute("class","datebtn")
+  date3.addEventListener("click",()=>
+  {
+    displayshowtime()
+  })
+  let date4=document.createElement("button")
+  date4.setAttribute("class","datebtn")
+  date4.addEventListener("click",()=>
+  {
+    displayshowtime()
+  })
+  
+  const date=new Date();
+  const day=date.getDate()
+  const month=date.getMonth()+1
+  const year=date.getFullYear()
+  date1.innerHTML=day+"/"+month+"/"+year;
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate()+1);
+  const day1=tomorrow.getDate()
+  const month1=tomorrow.getMonth()+1
+  const year1=tomorrow.getFullYear()
+  date2.innerHTML=day1+"/"+month1+"/"+year1;
+  const datomorrow = new Date();
+  datomorrow.setDate(datomorrow.getDate()+2);
+  const day2=datomorrow.getDate()
+  const month2=datomorrow.getMonth()+1
+  const year2=datomorrow.getFullYear()
+  date3.innerHTML=day2+"/"+month2+"/"+year2;
+  const daatomorrow = new Date();
+  daatomorrow.setDate(daatomorrow.getDate()+3);
+  const day3=daatomorrow.getDate()
+  const month3=daatomorrow.getMonth()+1
+  const year3=daatomorrow.getFullYear()
+  date4.innerHTML=day3+"/"+month3+"/"+year3;
+  document.querySelector("#dates").append(date1,date2,date3,date4)
 }
+displaydate()
 
-function handleSearch() {
-  let query = document.getElementById("query").value;
-  let newData = data.filter(
-    (ele) => ele.language.toLowerCase() == query.toLowerCase()
-  );
-  displayData(newData);
+let displayshowtime=()=>
+{
+  const time=8
+  document.querySelector("#time1").innerHTML=time+1+":00 AM"
+  document.querySelector("#time2").innerHTML=time+1+":15 AM"
+  document.querySelector("#time3").innerHTML=time+2+":30 AM"
+  document.querySelector("#time4").innerHTML=time+2+":45 AM"
+  document.querySelector("#time5").innerHTML=time+1+":05 AM"
+  document.querySelector("#time6").innerHTML=time+1+":10 AM"
+  document.querySelector("#time7").innerHTML=time+1+":15 AM"
+  document.querySelector("#time8").innerHTML=time+2+":30 AM"
+  document.querySelector("#time9").innerHTML=time+1+":00 AM"
+  document.querySelector("#time10").innerHTML=time+1+":15 AM"
+  document.querySelector("#time11").innerHTML=time+2+":30 AM"
+  document.querySelector("#time12").innerHTML=time+2+":45 AM"
 }
-
-function incPage() {
-  if (page < lastPage) {
-    page = page + 1;
-    let nextPageData = paginate(data, size, page);
-    displayData(nextPageData);
+let displaytodaytime=()=>
+{
+  const date=new Date();
+  let time=date.getHours();
+  if(time>=12 && time<22)
+  {
+    time-=12;
+    document.querySelector("#time1").innerHTML=time+1+":00 PM"
+    document.querySelector("#time2").innerHTML=time+1+":15 PM"
+    document.querySelector("#time3").innerHTML=time+2+":30 PM"
+    document.querySelector("#time4").innerHTML=time+2+":45 PM"
+    document.querySelector("#time5").innerHTML=time+1+":05 PM"
+    document.querySelector("#time6").innerHTML=time+1+":10 PM"
+    document.querySelector("#time7").innerHTML=time+1+":15 PM"
+    document.querySelector("#time8").innerHTML=time+2+":30 PM"
+    document.querySelector("#time9").innerHTML=time+1+":00 PM"
+    document.querySelector("#time10").innerHTML=time+1+":15 PM"
+    document.querySelector("#time11").innerHTML=time+2+":30 PM"
+    document.querySelector("#time12").innerHTML=time+2+":45 PM"
   }
-}
-
-function decPage() {
-  if (page > 1) {
-    page = page - 1;
-    let prevPageData = paginate(data, size, page);
-    displayData(prevPageData);
+  else if(time>=11 && time<12)
+  {
+    document.querySelector("#time1").innerHTML=time+1+":00 PM"
+    document.querySelector("#time2").innerHTML=time+1+":15 PM"
+    document.querySelector("#time3").innerHTML=time-12+2+":30 PM"
+    document.querySelector("#time4").innerHTML=time-12+2+":45 PM"
+    document.querySelector("#time5").innerHTML=time+1+":05 PM"
+    document.querySelector("#time6").innerHTML=time+1+":10 PM"
+    document.querySelector("#time7").innerHTML=time+1+":15 PM"
+    document.querySelector("#time8").innerHTML=time-12+2+":30 PM"
+    document.querySelector("#time9").innerHTML=time+1+":00 PM"
+    document.querySelector("#time10").innerHTML=time+1+":15 PM"
+    document.querySelector("#time11").innerHTML=time-12+2+":30 PM"
+    document.querySelector("#time12").innerHTML=time-12+2+":45 PM"
   }
+  else
+  {
+    document.querySelector("#time1").innerHTML=time+1+":00 AM"
+    document.querySelector("#time2").innerHTML=time+1+":15 AM"
+    document.querySelector("#time3").innerHTML=time+2+":30 AM"
+    document.querySelector("#time4").innerHTML=time+2+":45 AM"
+    document.querySelector("#time5").innerHTML=time+1+":05 AM"
+    document.querySelector("#time6").innerHTML=time+1+":10 AM"
+    document.querySelector("#time7").innerHTML=time+1+":15 AM"
+    document.querySelector("#time8").innerHTML=time+2+":30 AM"
+    document.querySelector("#time9").innerHTML=time+1+":00 AM"
+    document.querySelector("#time10").innerHTML=time+1+":15 AM"
+    document.querySelector("#time11").innerHTML=time+2+":30 AM"
+    document.querySelector("#time12").innerHTML=time+2+":45 AM"
+  }
+  
 }
-
-function displayData(data) {
-  document.getElementById("main").innerHTML = "";
-  data.map((ele) => {
-    let card = document.createElement("div");
-    card.setAttribute("class", "card");
-
-    let imgBox = document.createElement("div");
-    imgBox.setAttribute("class", "imgBox");
-
-    let aboutSection = document.createElement("div");
-    aboutSection.setAttribute("class", "aboutSection");
-
-    let jobSection = document.createElement("div");
-    jobSection.setAttribute("class", "jobSection");
-
-    let img = document.createElement("img");
-    img.setAttribute("class", "userImg");
-    img.setAttribute(
-      "src",
-      "https://www.bing.com/th?id=OIP.srNFFzORAaERcWvhwgPzVAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2"
-    );
-
-    imgBox.append(img);
-
-    let companyBox = document.createElement("div");
-    companyBox.setAttribute("class", "companyBox");
-    let company = document.createElement("p");
-    company.textContent = ele.company;
-
-    companyBox.append(company);
-
-    let positionBox = document.createElement("div");
-    positionBox.setAttribute("class", "positionBox");
-    let position = document.createElement("h2");
-    position.textContent = ele.position;
-
-    positionBox.append(position);
-
-    let contractBox = document.createElement("div");
-    contractBox.setAttribute("class", "contractBox");
-
-    let postedAt = document.createElement("div");
-    postedAt.setAttribute("class", "postedAt");
-    postedAt.textContent = ele.postedAt;
-
-    let contract = document.createElement("div");
-    contract.setAttribute("class", "contract");
-    contract.textContent = ele.contract;
-
-    let location = document.createElement("div");
-    location.setAttribute("class", "location");
-    location.textContent = ele.location;
-
-    contractBox.append(postedAt, contract, location);
-
-    aboutSection.append(companyBox, positionBox, contractBox);
-
-    let roleBox = document.createElement("div");
-    roleBox.setAttribute("class", "roleBox");
-    roleBox.textContent = ele.role;
-
-    let levelBox = document.createElement("div");
-    levelBox.setAttribute("class", "levelBox");
-    levelBox.textContent = ele.level;
-
-    let languageBox = document.createElement("div");
-    languageBox.setAttribute("class", "languageBox");
-    languageBox.textContent = ele.language;
-
-    jobSection.append(roleBox, levelBox, languageBox);
-
-    card.append(imgBox, aboutSection, jobSection);
-    document.getElementById("main").append(card);
-  });
-}
+displaytodaytime()
+document.querySelector(".times").addEventListener("click",()=>
+  {
+    
+    window.location.href="../seat-selection/seat selection.html"
+  })

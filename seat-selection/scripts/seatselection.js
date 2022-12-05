@@ -58,5 +58,19 @@ function topay(){
     var arr3 = savedarr.concat(idarray);
     localStorage.setItem('selectedseats', JSON.stringify(arr3));
     console.log(arr3);
-    window.location.href='../../paymentPage/payment.html';
+    window.location.href="../paymentPage/payment.html";
 }
+
+let displaytitle=()=>
+{
+    const date=new Date();
+    let day=date.getDate();
+    let month=date.getMonth()+1;
+    let time=date.getHours()+1
+    let year=date.getFullYear()
+    let name=localStorage.getItem("moviename")
+    document.querySelector("#localstorage").innerHTML=name
+    document.querySelector("#timing").innerHTML=time+":00"
+    document.querySelector("#detail").innerHTML="INOX: City Centre II, Noida | Today, "+day+"/"+month+"/"+year+" , "+time+":00"
+}
+displaytitle()
