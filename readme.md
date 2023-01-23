@@ -1,4 +1,4 @@
-About BOOKMYSHOW
+<h1>BOOKMYSHOW <h1/>
 
 Book My show is a Movie Ticket Book App where audiences can book online tickets for their favourite Movies. In this Website I have built Login - Sign up page , Footer and Payment Page & Complete functionality.
 
