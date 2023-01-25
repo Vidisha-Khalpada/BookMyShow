@@ -24,7 +24,7 @@ This project is a clone of Book My Show being a collaborative effort by a team o
   <ins>The Demo of Website:</ins> <br/><br/>
   The User on Visiting the website lands on the home page:
   ![image](https://user-images.githubusercontent.com/103308419/214385023-ba5c3a21-749d-4c21-a322-5808acfba004.png)
-  <br/><br/>The Login and Signup Page for before proceeding to book tickets:
+  <br/><br/>The Login and Signup Page before proceeding to book tickets:
   ![image](https://user-images.githubusercontent.com/103308419/214385930-6676dd79-b6f6-43e4-85bb-a4b5f37cbaa1.png)
   <br/><br/>The movies list along with the multiple filters for viewing the currently running movies:
   ![image](https://user-images.githubusercontent.com/103308419/214386509-860041b2-d040-4722-ae46-28fef19daf37.png)
